@@ -13,8 +13,8 @@ collections:
       label: "Homepage Heading Text"
       file: "themes/carpal-tunnel/data/team.yml"
       fields:
-        - label: "Enter Heading",
-          name: "home_title",
+        - label: "Homepage Heading"
+          name: "home_title"
           widget: "string"
         - label: "Members"
           name: "member"
@@ -26,7 +26,7 @@ collections:
             - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
             - {label: "Photo", name: "image", widget: "file"}
         - label: "Additional Staff Heading Text"
-          name: "staff_title",
+          name: "staff_title"
           widget: "string"
         - label: "Additional Staff"
           name: "staff_list"

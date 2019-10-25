@@ -3,7 +3,7 @@ member:
     linkedin_link: '#'
     specialty: Hand surgeon
     text:
-      
+
       Dr. Rodney Green received his Medical Degree from the University of the
       Witwatersrand in Johannesburg, South Africa. He did his specialty training
       at the Cleveland Clinic; in General Surgery, Plastic Surgery and Hand
@@ -29,14 +29,15 @@ member:
 
       Dr. Green is on the Medical Staff with Privileges at Cleveland Clinic
       Hillcrest Hospital  and serves as Medical Director at the Legacy Surgery
-      Center, a private State Licensed Surgery Center accredited by [AAAASF](https://www.aaaasf.org/), Medicare, and
+      Center, a private State Licensed Surgery Center accredited by <a href="https://www.aaaasf.org/" target="_blank">AAAASF</a>, Medicare, and
       BWC.
     title: 'Dr. Rodney Green, M.D. FACS'
   - image: assets/images/page-images/dr_bird.jpg
     linkedin_link: '#'
     specialty: Occupational Therapy Specialist
-    text: >-
-      <p>Ms. Karen Bird is an Occupational Therapy Specialist who graduated with
+    text:
+
+      Ms. Karen Bird is an Occupational Therapy Specialist who graduated with
       honors from Western Michigan University in 1979 and John Carroll
       University in 1989. She has been practicing occupational therapy for over
       40 years in various positions, among them staff therapist at St. Vincent
@@ -46,14 +47,18 @@ member:
       to strengthen their hands and facilitate sensory recovery, using
       desensitizing techniques if needed. She also fashions thermoplastic
       splints when needed. She recommends equipment and orders it, for assisting
-      in return to work if needed.</p> <p></p>
+      in return to work if needed.
     title: 'Ms. Karen N. Bird, MA OTRL'
   - image: assets/images/page-images/dr_green.jpg
     linkedin_link: '#'
     specialty: Doctor of Physical Therapy
-    text: >-
-      <p>Certified in Clinical Electro-diagnostics (EMG/NCS) <br>Certified in
-      Diagnostic Musculoskeletal Ultrasound (MSKUS) </p> <p>Dr. Kevin Dusenbury,
+    text:
+
+      Certified in Clinical Electro-diagnostics (EMG/NCS)
+      Certified in Diagnostic Musculoskeletal Ultrasound (MSKUS)
+
+
+      Dr. Kevin Dusenbury,
       DPT is an Electric Testing Specialist He provides this service to patients
       at the Carpal Tunnel Center, enabling them to receive in-house, rapid
       results that help ascertain their suitability for endoscopic carpal tunnel
@@ -62,19 +67,22 @@ member:
       University, Doctor of Physical Therapy (DPT) through University of Saint
       Augustine, FL. He completed a fellowship through the American Academy of
       Clinical Electrodiagnosis through which he was certified in
-      electroneuromyography (EMG/NCS) testing. </p>
+      electroneuromyography (EMG/NCS) testing.
     title: 'Dr. Kevin Dusenbury, DPT'
   - image: assets/images/page-images/mrs_akerman.jpg
     linkedin_link: '#'
     specialty: PA
-    text: >-
-      <p>Ester Raizy Akerman, PA-C, is a Physician Assistant with over a decade
+    text:
+
+      Ester Raizy Akerman, PA-C, is a Physician Assistant with over a decade
       of medical experience. Her extensive plastic surgery training makes her
       the preferred provider for laceration repair in the New Jersey area. She
       currently runs a busy plastic surgery practice under the supervision of
       Dr. Rodney Green, M.D., FACS. PA Akerman is renowned for her exceptional
-      individualized care and reassuring bedside manner.</p> <p>Ester Raizy
-      Akerman, PA-C, is board certified by the National Commission on
+      individualized care and reassuring bedside manner.
+
+
+      Ester Raizy Akerman, PA-C, is board certified by the National Commission on
       Certification of Physician Assistants (NCCPA) and practices in Lakewood,
-      NJ.</p>
+      NJ.
     title: 'Mrs. Ester Raizy Akerman, PA'

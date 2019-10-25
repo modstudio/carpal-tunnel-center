@@ -9,15 +9,13 @@ collections:
   - label: "Team"
     name: "team"
     files:
-      file: "themes/carpal-tunnel/data/team.yml"
-      extension: "yml"
-      name: "Homepage_title"
+      name: "homepage_title"
       label: "Homepage Heading Text"
+      file: "themes/carpal-tunnel/data/team.yml"
       fields:
-        - {label: "Enter Heading", name: "home_title", widget: "string"}
-      name: "members"
-      label: "Team Member"
-      fields:
+        - label: "Enter Heading",
+          name: "home_title",
+          widget: "string"
         - label: "Members"
           name: "member"
           widget: "list"
@@ -27,15 +25,11 @@ collections:
             - {label: "Text", name: "text", widget: "markdown"}
             - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
             - {label: "Photo", name: "image", widget: "file"}
-      name: "staffpage_title"
-      label: "Additional Staff Heading Text"
-      fields:
-        - {label: "Enter Heading", name: "staff_title", widget: "string"}
-      name: "staff_list"
-      label: "Additional Staff"
-      fields:
-        - label: "Members"
-          name: "staff"
+        - label: "Additional Staff Heading Text"
+          name: "staff_title",
+          widget: "string"
+        - label: "Additional Staff"
+          name: "staff_list"
           widget: "list"
           fields:
             - {label: "Name", name: "title", widget: "string"}

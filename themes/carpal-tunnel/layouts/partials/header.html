@@ -1,5 +1,5 @@
 <header class="site-header">
-  <a class="site-header__logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{.Site.Title}}"></a>
+  <a class="site-header__logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | relURL }}" alt="{{.Site.Title}}"></a>
   <button class="toggle-menu d-none-lg" type="button">
     <span class="toggle-menu__inner"></span>
   </button>

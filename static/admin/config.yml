@@ -13,30 +13,30 @@ collections:
         label: "Members"
         file: "themes/carpal-tunnel/data/team.yml"
         extension: "yml"
-        -fields:
-          - label: "Homepage Heading Text"
-            name: "home_title"
-            widget: "string"
-        -fields:
-          - label: "Team Member"
-            name: "member"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "title", widget: "string"}
-              - {label: "Specialty", name: "specialty", widget: "string"}
-              - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
-              - {label: "Photo", name: "image", widget: "file"}
-        -fields:
-          - label: "Additional Staff Heading Text"
-            name: "staff_title"
-            widget: "string"
-        -fields:
-          - label: "Additional Staff"
-            name: "staff"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "title", widget: "string"}
-              - {label: "Specialty", name: "specialty", widget: "string"}
-              - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
-              - {label: "Photo", name: "image", widget: "file"}
+          fields:
+            - label: "Homepage Heading Text"
+              name: "home_title"
+              widget: "string"
+          fields:
+            - label: "Team Member"
+              name: "member"
+              widget: "list"
+              fields:
+                - {label: "Name", name: "title", widget: "string"}
+                - {label: "Specialty", name: "specialty", widget: "string"}
+                - {label: "Text", name: "text", widget: "markdown"}
+                - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
+                - {label: "Photo", name: "image", widget: "file"}
+          fields:
+            - label: "Additional Staff Heading Text"
+              name: "staff_title"
+              widget: "string"
+          fields:
+            - label: "Additional Staff"
+              name: "staff"
+              widget: "list"
+              fields:
+                - {label: "Name", name: "title", widget: "string"}
+                - {label: "Specialty", name: "specialty", widget: "string"}
+                - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
+                - {label: "Photo", name: "image", widget: "file"}

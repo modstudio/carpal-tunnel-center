@@ -3,7 +3,7 @@ backend:
   branch: master
 
 media_folder: "themes/carpal-tunnel/static/assets/images/page-images"
-public_folder: "themes/carpal-tunnel/assets/images/page-images"
+public_folder: "/assets/images/page-images"
 
 collections:
   - label: "Team"

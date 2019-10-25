@@ -12,6 +12,7 @@ collections:
       - name: "Homepage_title"
         label: "Homepage Heading Text"
         file: "themes/carpal-tunnel/data/team.yml"
+        extension: "yml"
         fields:
           - {label: "Enter Heading", name: "home_title", widget: "string"}
       - name: "members"
@@ -31,6 +32,7 @@ collections:
       - name: "staffpage_title"
         label: "Additional Staff Heading Text"
         file: "themes/carpal-tunnel/data/team.yml"
+        extension: "yml"
         fields:
           - {label: "Enter Heading", name: "staff_title", widget: "string"}
       - name: "staff_list"

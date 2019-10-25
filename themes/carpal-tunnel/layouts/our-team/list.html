@@ -9,7 +9,7 @@
           </div>
           <div class="col-12 col-lg-7">
             <div class="team-text {{if (modBool $i 2)}} even{{end}}">
-              <a class="icon-rounded" href="{{.linkedin_link}}"><i class="icon icon-linkedin"></i></a>
+              <a class="icon-rounded" href="{{.linkedin_link}}" target="_blank"><i class="icon icon-linkedin"></i></a>
               <h2>{{.title}}</h2>
               <div class="team-text__subheading">{{.specialty}}</div>
               <div class="team-text__body">
@@ -35,7 +35,7 @@
           <div class="staff-block">
             <img class="staff-block__img img-responsive {{if not (modBool $i 2)}} odd{{end}}" src="{{.image | relURL}}" alt="">
             <div class="staff-block__body">
-              <a href="{{.linkedin_link}}" class="icon-rounded"><i class="icon icon-linkedin"></i></a>
+              <a href="{{.linkedin_link}}" target="_blank" class="icon-rounded"><i class="icon icon-linkedin"></i></a>
               <div class="staff-block__text">
                 <h4>{{.title}}</h4>
                 <div class="staff-block__subheading">{{.specialty}}</div>

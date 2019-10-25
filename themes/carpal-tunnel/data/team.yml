@@ -1,50 +1,75 @@
-home_title: "Our team"
 member:
-  - title : "Dr. Rodney Green, M.D. FACS"
-    image: "assets/images/page-images/dr_green.jpg"
-    specialty: "Hand surgeon"
-    linkedin_link: "#"
-    text: "<p>Dr. Rodney Green received his Medical Degree from the University of the Witwatersrand in Johannesburg, South Africa. He did his specialty training at the Cleveland Clinic; in General Surgery, Plastic Surgery and Hand Surgery. He is certified by the American Board of Plastic Surgery since 1989 and received a Certificate of Additional Qualification (CAQ) in Hand Surgery in 2004. He holds membership in The American Society of Plastic Surgeons and The American Society for Aesthetic Plastic Surgery and is a Fellow of The American College of Surgeons.</p>
-    <p>In 1993, Dr. Green trained closely with Dr. John Agee in Sacramento CA, legendary developer of the AGEE endoscopic carpal tunnel release technique and instrumentation.</p>
-    <p>Over the past thirty years, Dr. Green has performed thousands of aesthetic and reconstructive plastic surgeries for patients countrywide and has become respected as a Carpal Tunnel Surgeon. He serves as Director and Surgeon at the Carpal Tunnel Center, operating on patients in both his Cleveland, OH, and Lakewood, NJ, offices. </p>
-    <p>Dr. Green is on the Medical Staff with Privileges at Cleveland Clinic Hillcrest Hospital  and serves as Medical Director at the Legacy Surgery Center, a private State Licensed Surgery Center accredited by <a target='_blank' href='https://www.aaaasf.org'>AAAASF</a>, Medicare, and BWC. </p>"
+  - image: assets/images/page-images/dr_green.jpg
+    linkedin_link: '#'
+    specialty: Hand surgeon
+    text: >-
+      Some text
 
-  - title : "Ms. Karen N. Bird, MA OTRL"
-    image: "assets/images/page-images/dr_bird.jpg"
-    specialty: "Occupational Therapy Specialist"
-    linkedin_link: "#"
-    text: "<p>Ms. Karen Bird is an Occupational Therapy Specialist who graduated with honors from Western Michigan University in 1979 and John Carroll University in 1989. She has been practicing occupational therapy for over 40 years in various positions, among them staff therapist at St. Vincent Charity Hospital and Health Center in Cleveland, OH. Ms. Bird works with Carpal Tunnel patients at the Carpal Tunnel Center’s Cleveland office to help our patients in their recovery after Surgery. She develops protocols to strengthen their hands and facilitate sensory recovery, using desensitizing techniques if needed. She also fashions thermoplastic splints when needed. She recommends equipment and orders it, for assisting in return to work if needed.</p>
-    <p></p>"
 
-  - title : "Dr. Kevin Dusenbury, DPT"
-    image: "assets/images/page-images/dr_green.jpg"
-    specialty: "Doctor of Physical Therapy"
-    linkedin_link: "#"
-    text: "<p>Certified in Clinical Electro-diagnostics (EMG/NCS) <br>Certified in Diagnostic Musculoskeletal Ultrasound (MSKUS) </p>
-    <p>Dr. Kevin Dusenbury, DPT is an Electric Testing Specialist He provides this service to patients at the Carpal Tunnel Center, enabling them to receive in-house, rapid results that help ascertain their suitability for endoscopic carpal tunnel surgery.
-    His undergraduate degree (BA) was through Cleveland State University, Masters of Science in Physical Therapy (MSPT) Cleveland State University, Doctor of Physical Therapy (DPT) through University of Saint Augustine, FL. He completed a fellowship through the American Academy of Clinical Electrodiagnosis through which he was certified in electroneuromyography (EMG/NCS) testing.
-    </p>"
-
-  - title : "Mrs. Ester Raizy Akerman, PA"
-    image: "assets/images/page-images/mrs_akerman.jpg"
-    specialty: "PA"
-    linkedin_link: "#"
-    text: "<p>Ester Raizy Akerman, PA-C, is a Physician Assistant with over a decade of
-    medical experience. Her extensive plastic surgery training makes her the
-    preferred provider for laceration repair in the New Jersey area. She currently
-    runs a busy plastic surgery practice under the supervision of Dr. Rodney
-    Green, M.D., FACS. PA Akerman is renowned for her exceptional individualized
-    care and reassuring bedside manner.</p>
-    <p>Ester Raizy Akerman, PA-C, is board certified by the National Commission on
-    Certification of Physician Assistants (NCCPA) and practices in Lakewood, NJ.</p>"
-
-staff_title: "Additional staff"
-staff:
-  - title: "Kimberley Lucas"
-    image: "assets/images/page-images/kimberley_lucas.jpg"
-    specialty: "Office Manager"
-    linkedin_link: "#"
-  - title: "Roxanne Bennicci"
-    image: "assets/images/page-images/roxanne_bennicci.jpg"
-    specialty: "Patient Coordinator"
-    linkedin_link: "#"
+      <p>Dr. Rodney Green received his Medical Degree from the University of the
+      Witwatersrand in Johannesburg, South Africa. He did his specialty training
+      at the Cleveland Clinic; in General Surgery, Plastic Surgery and Hand
+      Surgery. He is certified by the American Board of Plastic Surgery since
+      1989 and received a Certificate of Additional Qualification (CAQ) in Hand
+      Surgery in 2004. He holds membership in The American Society of Plastic
+      Surgeons and The American Society for Aesthetic Plastic Surgery and is a
+      Fellow of The American College of Surgeons.</p> <p>In 1993, Dr. Green
+      trained closely with Dr. John Agee in Sacramento CA, legendary developer
+      of the AGEE endoscopic carpal tunnel release technique and
+      instrumentation.</p> <p>Over the past thirty years, Dr. Green has
+      performed thousands of aesthetic and reconstructive plastic surgeries for
+      patients countrywide and has become respected as a Carpal Tunnel Surgeon.
+      He serves as Director and Surgeon at the Carpal Tunnel Center, operating
+      on patients in both his Cleveland, OH, and Lakewood, NJ, offices. </p>
+      <p>Dr. Green is on the Medical Staff with Privileges at Cleveland Clinic
+      Hillcrest Hospital  and serves as Medical Director at the Legacy Surgery
+      Center, a private State Licensed Surgery Center accredited by <a
+      target='_blank' href='https://www.aaaasf.org'>AAAASF</a>, Medicare, and
+      BWC. </p>
+    title: 'Dr. Rodney Green, M.D. FACS'
+  - image: assets/images/page-images/dr_bird.jpg
+    linkedin_link: '#'
+    specialty: Occupational Therapy Specialist
+    text: >-
+      <p>Ms. Karen Bird is an Occupational Therapy Specialist who graduated with
+      honors from Western Michigan University in 1979 and John Carroll
+      University in 1989. She has been practicing occupational therapy for over
+      40 years in various positions, among them staff therapist at St. Vincent
+      Charity Hospital and Health Center in Cleveland, OH. Ms. Bird works with
+      Carpal Tunnel patients at the Carpal Tunnel Center’s Cleveland office to
+      help our patients in their recovery after Surgery. She develops protocols
+      to strengthen their hands and facilitate sensory recovery, using
+      desensitizing techniques if needed. She also fashions thermoplastic
+      splints when needed. She recommends equipment and orders it, for assisting
+      in return to work if needed.</p> <p></p>
+    title: 'Ms. Karen N. Bird, MA OTRL'
+  - image: assets/images/page-images/dr_green.jpg
+    linkedin_link: '#'
+    specialty: Doctor of Physical Therapy
+    text: >-
+      <p>Certified in Clinical Electro-diagnostics (EMG/NCS) <br>Certified in
+      Diagnostic Musculoskeletal Ultrasound (MSKUS) </p> <p>Dr. Kevin Dusenbury,
+      DPT is an Electric Testing Specialist He provides this service to patients
+      at the Carpal Tunnel Center, enabling them to receive in-house, rapid
+      results that help ascertain their suitability for endoscopic carpal tunnel
+      surgery. His undergraduate degree (BA) was through Cleveland State
+      University, Masters of Science in Physical Therapy (MSPT) Cleveland State
+      University, Doctor of Physical Therapy (DPT) through University of Saint
+      Augustine, FL. He completed a fellowship through the American Academy of
+      Clinical Electrodiagnosis through which he was certified in
+      electroneuromyography (EMG/NCS) testing. </p>
+    title: 'Dr. Kevin Dusenbury, DPT'
+  - image: assets/images/page-images/mrs_akerman.jpg
+    linkedin_link: '#'
+    specialty: PA
+    text: >-
+      <p>Ester Raizy Akerman, PA-C, is a Physician Assistant with over a decade
+      of medical experience. Her extensive plastic surgery training makes her
+      the preferred provider for laceration repair in the New Jersey area. She
+      currently runs a busy plastic surgery practice under the supervision of
+      Dr. Rodney Green, M.D., FACS. PA Akerman is renowned for her exceptional
+      individualized care and reassuring bedside manner.</p> <p>Ester Raizy
+      Akerman, PA-C, is board certified by the National Commission on
+      Certification of Physician Assistants (NCCPA) and practices in Lakewood,
+      NJ.</p>
+    title: 'Mrs. Ester Raizy Akerman, PA'

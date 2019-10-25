@@ -11,7 +11,7 @@ collections:
     files:
       - name: "members"
         label: "Members"
-        file: "data/team.yml"
+        file: "themes/carpal-tunnel/data/team.yml"
         extension: "yml"
         fields:
           - label: "Team Member"

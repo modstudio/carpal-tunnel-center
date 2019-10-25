@@ -12,7 +12,7 @@
               <a class="icon-rounded" href="{{.linkedin_link}}"><i class="icon icon-linkedin"></i></a>
               <h2>{{.title}}</h2>
               <div class="team-text__subheading">{{.specialty}}</div>
-              <div class="team-text__body">{{.text | safeHTML}}</div>
+              <div class="team-text__body">{{.text | markdownify}}</div>
             </div>
           </div>
         </div>

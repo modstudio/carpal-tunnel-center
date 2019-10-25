@@ -1,0 +1,80 @@
+.faq {
+  padding: 175px 0 0;
+  @include respond-to(md){
+    padding: 100px 0 0;
+  }
+  @include respond-to(sm){
+    padding: 100px 0 0;
+  }
+}
+.faq-list {
+  padding: 0 50px;
+  @include respond-to(lg){
+    padding: 0;
+  }
+}
+.faq-item {
+  border-bottom: 1px solid $very-light-gray;
+  &.active{
+    h4{
+      background: rgba($very-light-blue, 0.5);
+      border-radius: 3px;
+      &:after{
+        content: '\ea07';
+        @include fsz(3px);
+      }
+    }
+  }
+  h4{
+    padding: 0 100px 0 50px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: 300ms;
+    @include respond-to(md){
+      padding: 0 80px 0 30px;
+    }
+    @include respond-to(xs){
+      padding: 0 65px 0 20px;
+    }
+    &:after{
+      content: '\ea09';
+      font-family: $font-icon;
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      background: $blue;
+      border-radius: 50%;
+      right: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      @include fsz(13px);
+      @include respond-to(md){
+        right: 20px;
+      }
+      @include respond-to(xs){
+        right: 15px;
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  &__body {
+    overflow: hidden;
+    height: 0;
+    transition: 300ms;
+  }
+  &__body-inner{
+    padding: 54px 50px;
+    @include respond-to(md){
+      padding: 30px;
+    }
+    @include respond-to(xs){
+      padding: 20px;
+    }
+  }
+}

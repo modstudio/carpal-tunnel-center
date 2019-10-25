@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <section class="faq">
+    <div class="container container--sm">
+      <ul class="faq-list">
+        {{ range .Site.Data.faq.list }}
+          <li class="faq-item">
+            <h4>{{.question}}</h4>
+            <div class="faq-item__body">
+              <div class="faq-item__body-inner">{{.answer | safeHTML}}</div>
+            </div>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+{{ end }}

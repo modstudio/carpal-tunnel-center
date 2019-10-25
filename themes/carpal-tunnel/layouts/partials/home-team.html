@@ -1,0 +1,26 @@
+<section class="home-team">
+  <div class="container container--sm">
+    <div class="home-team__header">
+      <h2>{{.Site.Data.team.home_title}}</h2>
+      <a class="btn btn--default" href="team">Show all</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row gutter-20">
+      {{ range .Site.Data.team.member }}
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="ht-block">
+          <figure>
+            <img class="img-responsive" src="{{.image}}" alt="{{.title}}">
+            <figcaption>
+              <a class="icon-rounded" href="{{.linkedin_link}}"><i class="icon icon-linkedin"></i></a>
+              <h4>{{.title}}</h4>
+              <div class="ht-block__subheading">{{.specialty}}</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+.site-footer{
+  border-top: 1px solid $very-light-gray;
+  padding: 75px 0 155px;
+  color: $gray;
+  line-height: 1.4;
+  @include respond-to(sm){
+    padding: 30px 0;
+    @include fsz(12px);
+  }
+  a{
+    text-decoration: underline;
+  }
+}

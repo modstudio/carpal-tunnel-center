@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url('../fonts/DMSans-Regular.woff2') format('woff2'),
+        url('../fonts/DMSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DMSans-Italic';
+    src: url('../fonts/DMSans-Italic.woff2') format('woff2'),
+        url('../fonts/DMSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CircularStd-Book';
+    src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+        url('../fonts/CircularStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CircularStd-Medium';
+    src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+        url('../fonts/CircularStd-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------------------------
+
+Nucleo Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: 'Nucleo';
+  src: url('../fonts/Nucleo.eot');
+  src: url('../fonts/Nucleo.eot') format('embedded-opentype'), url('../fonts/Nucleo.woff2') format('woff2'), url('../fonts/Nucleo.woff') format('woff'), url('../fonts/Nucleo.ttf') format('truetype'), url('../fonts/Nucleo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+  base class definition
+-------------------------*/
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'Nucleo';
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+.icon-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.icon-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.icon-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.icon-flip-y {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.icon-flip-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/*------------------------
+  icons
+-------------------------*/
+.icon-arrow::before {
+  content: "\ea02";
+}
+
+.icon-clock::before {
+  content: "\ea03";
+}
+
+.icon-linkedin::before {
+  content: "\ea05";
+}
+
+.icon-location::before {
+  content: "\ea06";
+}
+
+.icon-minus::before {
+  content: "\ea07";
+}
+
+.icon-plus::before {
+  content: "\ea09";
+}
+
+.icon-mobile::before {
+  content: "\ea0a";
+}
+
+.icon-phone::before {
+  content: "\ea0b";
+}
+
+.icon-email::before {
+  content: "\ea0c";
+}

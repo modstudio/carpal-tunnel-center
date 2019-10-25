@@ -1,0 +1,146 @@
+.top-section{
+  position: relative;
+  background-size: 2px 2px;
+  background-repeat: no-repeat;
+  background-color: $white;
+  padding: 200px 0 136px;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% - 100px);
+    height: 100%;
+    background-image: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 0 0 200px 0;
+    @include respond-to(xl){
+      width: calc(100% - 50px);
+    }
+    @include respond-to(md){
+      width: 100%;
+      border-radius: 0;
+    }
+    @include respond-to(xs){
+      background-position: top 90%;
+      opacity: 0.2;
+    }
+  }
+  @include respond-to(xs){
+    background-color: $home-top-blue;
+    padding: 120px 0 100px;
+  }
+  h1{
+    @include respond-to(md){
+      max-width: 400px;
+    }
+  }
+  &__subheading{
+    @include fsz(17px);
+    line-height: 1.65;
+    padding-right: 34px;
+    margin-top: 35px;
+    @include respond-to(md){
+      padding-right: 140px;
+    }
+    @include respond-to(xs){
+      padding-right: 0;
+    }
+  }
+  &--lg{
+      padding: 270px 0 160px;
+      @include respond-to(lg){
+        padding: 180px 0 130px;
+      }
+      @include respond-to(md){
+        padding: 120px 0 100px;
+        &:before{
+          background-position: top calc(100% + 240px);
+          background-color: $home-top-blue;
+        }
+      }
+      @include respond-to(xs){
+        background-color: $home-top-blue;
+        &:before{
+          background-position: top center;
+          opacity: 0.2;
+        }
+      }
+  }
+  &__appointment{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+    z-index: 2;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    .container{
+      pointer-events: none;
+    }
+    @include respond-to(md){
+      height: 80px;
+    }
+  }
+  &__appointment-link{
+    background: $blue;
+    border-radius: 0 3px 3px 0;
+    width: 50vw;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    @include respond-to(md){
+      width: 100%;
+      border-radius: 0;
+      &:after{
+        display: none;
+      }
+    }
+    &:after{
+      content: '';
+      height: 100%;
+      width: 100px;
+      background: rgba($white, 0.2);
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(100%);
+      transition: inherit;
+    }
+    &:hover{
+      &:after{
+        transform: none;
+      }
+      ~ .container .top-section__appointment-text{
+        i{
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+  &__appointment-text{
+    color: $white;
+    @include fsz(24px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-heading;
+    @include respond-to(md){
+      @include fsz(20px);
+    }
+    @include respond-to(xs){
+      @include fsz(18px);
+    }
+    i{
+      @include fsz(16px);
+      transition: 200ms;
+      @include respond-to(xs){
+        @include fsz(12px);
+      }
+    }
+  }
+}

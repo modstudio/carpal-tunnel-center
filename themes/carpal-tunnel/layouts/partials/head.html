@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ if .IsHome }} {{ .Site.Title }} {{ else }} {{.Title }} - {{ .Site.Title }} {{ end }} </title>
+
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+
+
+  {{ $cssOpts := (dict "targetPath" "assets/css/main.css" ) }}
+  {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.css" . | toCSS $cssOpts | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+
+</head>

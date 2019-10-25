@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40.2px" height="39.8px" viewBox="0 0 40.2 39.8" style="enable-background:new 0 0 40.2 39.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#16BAFB;}
+	.st2{filter:url(#Adobe_OpacityMaskFilter);}
+	.st3{mask:url(#b_1_);fill-rule:evenodd;clip-rule:evenodd;fill:#16BAFB;}
+</style>
+<g>
+	<path class="st0" d="M20,9.9C25.5,9.9,30,14.4,30,20C30,25.5,25.5,30,20,30C14.4,30,9.9,25.5,9.9,20C9.9,14.4,14.4,9.9,20,9.9"/>
+	<path class="st1" d="M20,10.9c-5,0-9,4-9,9c0,5,4,9,9,9s9-4,9-9C29,15,24.9,10.9,20,10.9 M20,31.1c-6.1,0-11.1-5-11.1-11.1
+		c0-6.1,5-11.1,11.1-11.1c6.1,0,11.1,5,11.1,11.1C31.1,26.1,26.1,31.1,20,31.1"/>
+	<path class="st0" d="M20,14.8c2.8,0,5.2,2.3,5.2,5.2s-2.3,5.2-5.2,5.2s-5.2-2.3-5.2-5.2l0,0"/>
+	<path class="st1" d="M20,26.2c-3.4,0-6.2-2.8-6.2-6.2c0-0.6,0.5-1,1.1-1s1.1,0.5,1.1,1c0,2.3,1.8,4.1,4.1,4.1
+		c2.3,0,4.1-1.8,4.1-4.1c0-2.3-1.8-4.1-4.1-4.1c-0.6,0-1-0.5-1-1.1s0.5-1.1,1-1.1c3.4,0,6.2,2.8,6.2,6.2
+		C26.2,23.4,23.4,26.2,20,26.2"/>
+	<path class="st0" d="M7.6,3.9L7.2,7.2L3.9,7.6L1,4.8L4.8,1L7.6,3.9z"/>
+	<g>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36" id="b_1_">
+			<g class="st2">
+				<path id="a_1_" class="st0" d="M0,0h36v36H0V0z"/>
+			</g>
+		</mask>
+		<path class="st3" d="M2.5,4.8l2.2-2.2l1.7,1.7l-0.2,2l-2,0.2C4.3,6.5,2.5,4.8,2.5,4.8z M20,3.9c-3.9,0-7.7,1.4-10.6,4L8.3,6.8
+			L8.6,4c0-0.3-0.1-0.6-0.3-0.9L5.5,0.3C5.1-0.1,4.4-0.1,4,0.3c0,0,0,0,0,0L0.3,4c-0.4,0.4-0.4,1.1,0,1.5c0,0,0,0,0,0l2.8,2.8
+			C3.4,8.6,3.7,8.7,4,8.6l2.8-0.3l1.1,1.1c-2.6,2.9-4,6.7-4,10.6c0,8.8,7.2,16,16,16c4.7,0,9.1-2,12.1-5.5c0.4-0.4,0.3-1.1-0.1-1.5
+			s-1.1-0.3-1.5,0.1c-2.6,3.1-6.5,4.8-10.5,4.8C12.3,33.9,6,27.6,6,20c0-3.5,1.3-6.6,3.4-9.1l9.9,9.9c0.4,0.4,1.1,0.4,1.5,0
+			c0,0,0,0,0,0c0.4-0.4,0.4-1.1,0-1.5c0,0,0,0,0,0l-9.9-9.9C13.4,7.2,16.6,6,20,6c7.7,0,13.9,6.3,13.9,13.9c0,0.6,0.5,1,1.1,1
+			c0.6,0,1-0.5,1-1C36,11.1,28.8,3.9,20,3.9z"/>
+	</g>
+</g>
+</svg>

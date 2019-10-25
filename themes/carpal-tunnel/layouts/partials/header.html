@@ -1,0 +1,29 @@
+<header class="site-header">
+  <a class="site-header__logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{.Site.Title}}"></a>
+  <button class="toggle-menu d-none-lg" type="button">
+    <span class="toggle-menu__inner"></span>
+  </button>
+  <nav class="site-nav">
+    <ul>
+      {{ range .Site.Menus.main }}
+        {{ if eq $.Kind "home" }}
+            {{ $.Scratch.Set "active" ($.IsMenuCurrent "main" .) }}
+        {{ else }}
+            {{ $.Scratch.Set "active" (eq .URL $.Type) }}
+        {{ end }}
+        {{ $active := $.Scratch.Get "active" }}
+        <li class="site-nav__item {{ if $active }}active{{end}}">
+          <a class="site-nav__link" href="{{ .URL | relURL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="#contact">Contact</a>
+        </li>
+    </ul>
+  </nav>
+  <a href="tel:{{ replaceRE "[{+, }]" "" .Site.Params.contact.phone}}" class="site-header__call">
+    <div class="site-header__call-icon"><i class="icon icon-mobile"></i></div>
+    <div class="d-none d-block-lg">Call to our clinic: <span>{{.Site.Params.contact.phone}}</span></div>
+  </a>
+  <a class="btn btn--light" href="#contact">Contact Us</a>
+</header>

@@ -1,0 +1,78 @@
+.testimonials {
+  padding: 110px 0 0;
+  @include respond-to(sm){
+    padding: 60px 0 0;
+  }
+  .tns-controls{
+    @include center(both);
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 50px);
+    z-index: 3;
+    button{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: $blue;
+      color: $white;
+    }
+    @include respond-to(sm){
+      transform: none;
+      top: 0;
+      width: 100%;
+      left: 0;
+    }
+  }
+  .tns-outer{
+    position: relative;
+  }
+}
+.testimonials-slider {
+  margin-top: 96px;
+  &__item {
+    padding: 85px 150px 70px;
+    background: rgba($very-light-blue, 0.25);
+    text-align: center;
+    position: relative;
+    border-radius: 60px 0 60px 0;
+    height: 100%;
+    @include respond-to(md){
+      padding-left: 60px;
+      padding-right: 60px;
+      border-radius: 30px 30px 30px 0;
+    }
+    @include respond-to(sm){
+      padding: 80px 20px 40px;
+    }
+    blockquote{
+      @include fsz(19px);
+      font-family: $font-italic;
+      line-height: 1.58;
+      color: $black;
+      margin-bottom: 35px;
+      @include respond-to(sm){
+        @include fsz(17px);
+      }
+    }
+  }
+  &__item-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 5px solid $white;
+    overflow: hidden;
+  }
+  &__item-rate {
+    margin-bottom: 30px;
+  }
+  &__subheading {
+    margin-top: 8px;
+    color: $blue;
+  }
+}

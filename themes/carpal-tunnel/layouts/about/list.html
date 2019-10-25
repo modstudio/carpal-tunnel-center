@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <section class="team">
+    <div class="container">
+      <div class="team-item">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="team-item__img"><img class="img-responsive" src="{{.Site.Data.about.photo | relURL}}" alt="{{.Site.Data.about.title | markdownify | plainify}}"></div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="team-text odd">
+              <h2>{{.Site.Data.about.title | safeHTML}}</h2>
+              <div class="team-text__body">{{.Site.Data.about.text | safeHTML}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clinic">
+    <div class="container">
+      <div class="clinic__inner">
+        <h2>{{.Site.Data.about.clinic_title}}</h2>
+        <img class="img-responsive" src="{{.Site.Data.about.clinic_image | relURL}}" alt="{{.Site.Data.about.clinic_title}}">
+      </div>
+    </div>
+  </div>
+  <section class="process">
+    <div class="container container--sm">
+      <h2 class="text-center">The process that we offer includes</h2>
+      <div class="row gutter-40">
+        {{ range .Site.Data.about.process }}
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="process-block">
+              <div class="process-block__img"><img src="{{.icon | relURL}}" alt=""></div>
+              <p>{{.text | safeHTML}}</p>
+            </div>
+          </div>
+        {{end}}
+      </div>
+    </div>
+  </section>
+{{ end }}

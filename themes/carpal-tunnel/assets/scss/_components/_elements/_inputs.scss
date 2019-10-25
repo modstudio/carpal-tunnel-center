@@ -1,0 +1,23 @@
+.form-group {
+  margin-bottom: 20px;
+}
+.form-control {
+  height: 50px;
+  border: 1px solid $very-light-gray;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0 30px;
+  background: $white;
+  color: $black;
+  @include fsz(16px);
+  font-family: $font-regular;
+  @at-root textarea#{&}{
+    height: 110px;
+    padding: 16px 30px;
+    resize: none;
+  }
+  @include placeholder{
+    opacity: 1;
+    color: $black;
+  }
+}

@@ -1,0 +1,9 @@
+name = "Carpal Tunnel Center"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "Made for Carpal Tunnel Center"
+homepage = ""
+
+[author]
+  name = "modstud.io"
+  homepage = "https://modstud.io/"

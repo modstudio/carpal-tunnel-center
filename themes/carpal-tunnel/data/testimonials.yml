@@ -1,0 +1,10 @@
+heading: "What our patients say"
+review:
+  - name: "Rafał Olbromski"
+    company: "Widelab"
+    image: "assets/images/page-images/user_1.jpg"
+    text: "Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit."
+  - name: "Landon Carter"
+    company: "Actor"
+    image: "assets/images/page-images/user_1.jpg"
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam temporibus totam, excepturi nesciunt earum ea ex voluptas porro vero nemo maxime omnis officiis exercitationem unde illo adipisci itaque doloremque, maiores, veniam voluptatum fugit nobis veritatis. Alias perspiciatis cupiditate, hic voluptas?"

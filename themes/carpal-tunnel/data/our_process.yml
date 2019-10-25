@@ -1,0 +1,19 @@
+process:
+  heading: "Our process"
+  subheading: "The efficient process that we offer includes:"
+  enable : true
+  item:
+    - icon: "assets/images/page-images/consult.svg"
+      text: "Consultation with Dr. Green at his office or by videoconference. <br> (We also offer initial screening at our satellite office in Lakewood NJ.) "
+
+    - icon: "assets/images/page-images/arrangement.svg"
+      text: "Arrangement at the same location, for electrical testing to confirm the diagnosis and establish objective baseline." 
+
+    - icon: "assets/images/page-images/treatment.svg"
+      text: "Surgical treatment with the single port endoscopic technique at our Ohio State licensed Surgery Center also located at the same location. "
+
+    - icon: "assets/images/page-images/follow-up.svg"
+      text: "Postop follow-up at the same location with hand therapy provided by our licensed Occupational Therapist, also at the same location. "
+
+    - icon: "assets/images/page-images/diagnosis.svg"
+      text: "This process allows for rapid diagnosis and treatment with relief from symptoms. It also prevents further damage to the nerve caused by delay. "

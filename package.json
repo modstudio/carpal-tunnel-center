@@ -1,0 +1,14 @@
+{
+  "name": "ct-center",
+  "version": "1.0.0",
+  "description": "carpal-tunnel-center",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "modstud.io",
+  "license": "ISC",
+  "dependencies": {
+    "tiny-slider": "^2.9.2"
+  }
+}

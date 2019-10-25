@@ -34,7 +34,7 @@ member:
   - image: assets/images/page-images/dr_bird.jpg
     linkedin_link: '#'
     specialty: Occupational Therapy Specialist
-    text: >-
+    text: >+
       Ms. Karen Bird is an Occupational Therapy Specialist who graduated with
       honors from Western Michigan University in 1979 and John Carroll
       University in 1989. She has been practicing occupational therapy for over
@@ -46,6 +46,7 @@ member:
       desensitizing techniques if needed. She also fashions thermoplastic
       splints when needed. She recommends equipment and orders it, for assisting
       in return to work if needed.
+
     title: 'Ms. Karen N. Bird, MA OTRL'
   - image: assets/images/page-images/dr_green.jpg
     linkedin_link: '#'

@@ -4,3 +4,19 @@ backend:
 
 media_folder: "static/assets/images/page-images"
 public_folder: "/assets/images/page-images"
+
+collections:
+  - label: "Team"
+    name: "team"
+    files:
+      - name: "members"
+        label: "Members"
+        file: "data/team.yml"
+        extension: "yml"
+        fields:
+          - label: "Team Member"
+            name: "member"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "title", widget: "string"}
+              - {label: "Specialty", name: "specialty", widget: "string"}

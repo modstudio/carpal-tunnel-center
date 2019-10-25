@@ -13,11 +13,11 @@ collections:
         label: "Members"
         file: "themes/carpal-tunnel/data/team.yml"
         extension: "yml"
-        fields:
+        -fields:
           - label: "Homepage Heading Text"
             name: "home_title"
             widget: "string"
-        fields:
+        -fields:
           - label: "Team Member"
             name: "member"
             widget: "list"
@@ -27,11 +27,11 @@ collections:
               - {label: "Text", name: "text", widget: "markdown"}
               - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
               - {label: "Photo", name: "image", widget: "file"}
-        fields:
+        -fields:
           - label: "Additional Staff Heading Text"
             name: "staff_title"
             widget: "string"
-        fields:
+        -fields:
           - label: "Additional Staff"
             name: "staff"
             widget: "list"

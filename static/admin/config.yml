@@ -9,8 +9,8 @@ collections:
   - label: "Team"
     name: "team"
     files:
-      - name: "homepage_title"
-        label: "Homepage Heading Text"
+      - name: "team_settings"
+        label: "Team Settings"
         file: "themes/carpal-tunnel/data/team.yml"
         fields:
           - label: "Homepage Heading"
@@ -25,11 +25,11 @@ collections:
               - {label: "Text", name: "text", widget: "markdown"}
               - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
               - {label: "Photo", name: "image", widget: "file"}
-          - label: "Additional Staff Heading Text"
+          - label: "Additional Staff Heading"
             name: "staff_title"
             widget: "string"
           - label: "Additional Staff"
-            name: "staff_list"
+            name: "staff"
             widget: "list"
             fields:
               - {label: "Name", name: "title", widget: "string"}

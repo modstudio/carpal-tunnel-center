@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-12 col-sm-7 col-lg-8">
         <div class="form">
-          <h2>{{.Site.Params.contact.contact_heading}}</h2>
+          <h2>{{.Site.Data.contact.contact_heading}}</h2>
           <form name="contact-form">
             <div class="row gutter-20">
               <div class="col-12 col-md-6">
@@ -36,37 +36,37 @@
       </div>
       <div class="col-12 col-sm-4">
         <div class="locations">
-          <h2>{{.Site.Params.contact.locations_heading}}</h2>
+          <h2>{{.Site.Data.contact.locations_heading}}</h2>
           <h5>CLEVELAND OFFICE</h5>
           <div class="locations__subheading">Main Office</div>
           <div class="locations__text">
             <i class="icon icon-location"></i>
-            <div>{{.Site.Params.contact.cleveland_address_1}}</div>
-            <div>{{.Site.Params.contact.cleveland_address_2}}</div>
+            <div>{{.Site.Data.contact.cleveland.cleveland_address_1}}</div>
+            <div>{{.Site.Data.contact.cleveland.cleveland_address_2}}</div>
           </div>
           <div class="locations__text">
             <i class="icon icon-email"></i>
-            <a href="mailto:{{.Site.Params.contact.cleveland_email}}">{{.Site.Params.contact.cleveland_email}}</a>
+            <a href="mailto:{{.Site.Data.contact.cleveland.cleveland_email}}">{{.Site.Data.contact.cleveland.cleveland_email}}</a>
           </div>
           <div class="locations__text mt-0">
             <i class="icon icon-phone"></i>
-            <a href="tel:{{ replaceRE "-" "" .Site.Params.contact.cleveland_phone}}">{{.Site.Params.contact.cleveland_phone}}</a>
+            <a href="tel:{{ replaceRE "-" "" .Site.Data.contact.cleveland.cleveland_phone}}">{{.Site.Data.contact.cleveland.cleveland_phone}}</a>
           </div>
           <div class="locations__text">
             <i class="icon icon-clock"></i>
-            <div>{{.Site.Params.contact.cleveland_hours_1}},</div>
-            <div>{{.Site.Params.contact.cleveland_hours_2}}</div>
+            <div>{{.Site.Data.contact.cleveland.cleveland_hours_1}},</div>
+            <div>{{.Site.Data.contact.cleveland.cleveland_hours_2}}</div>
           </div>
           <h5>LAKEWOOD OFFICE</h5>
           <div class="locations__text">
             <i class="icon icon-location"></i>
-            <div>{{.Site.Params.contact.lakewood_address_1}}</div>
-            <div>{{.Site.Params.contact.lakewood_address_2}}</div>
-            <div>{{.Site.Params.contact.lakewood_address_3}}</div>
+            <div>{{.Site.Data.contact.lakewood.lakewood_address_1}}</div>
+            <div>{{.Site.Data.contact.lakewood.lakewood_address_2}}</div>
+            <div>{{.Site.Data.contact.lakewood.lakewood_address_3}}</div>
           </div>
           <div class="locations__text">
             <i class="icon icon-phone"></i>
-            <a href="tel:{{ replaceRE "-" "" .Site.Params.contact.lakewood_phone }}">{{.Site.Params.contact.lakewood_phone}}</a>
+            <a href="tel:{{ replaceRE "-" "" .Site.Data.contact.lakewood.lakewood_phone }}">{{.Site.Data.contact.lakewood.lakewood_phone}}</a>
           </div>
         </div>
       </div>

@@ -19,9 +19,13 @@ collections:
           - label: "Site Domain"
             name: "baseURL"
             widget: "string"
-          - label: "Logo"
-            name: "params:logo"
-            widget: "file"
+          - label: "Parameters"
+            name: "params"
+            widget: "object"
+            fields:
+              - name: "logo"
+                label: "Logo"
+                widget: "file"
   - label: "Team"
     name: "team"
     files:

@@ -26,6 +26,16 @@ collections:
               - name: "logo"
                 label: "Logo"
                 widget: "file"
+              - name: "description"
+                label: "Description"
+                widget: "text"
+      - name: "contact"
+        label: "Contact Info"
+        file: "config.yml"
+        fields:
+          - label: "Contact Heading"
+            name: "contact_heading"
+            widget: "string"
   - label: "Team"
     name: "team"
     files:

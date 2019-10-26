@@ -6,9 +6,11 @@ media_folder: "themes/carpal-tunnel/static/assets/images/page-images"
 public_folder: "/assets/images/page-images"
 
 collections:
-  - files:
-    - label: "General"
-      name: "general"
+  - label: "General"
+    name: "general"
+    files:
+    - label: "General Info"
+      name: "general_info"
       file: "config.yml"
       fields:
         - name: "general_settings"
@@ -36,7 +38,9 @@ collections:
                 - label: "Contact Heading"
                   name: "contact_heading"
                   widget: "string"
-  - files:
+  - label: "Team"
+    name: "team"
+    files:
     - name: "team_settings"
       label: "Team Settings"
       file: "themes/carpal-tunnel/data/team.yml"

@@ -1,0 +1,52 @@
+baseURL: https://carpaltunnelcenter.netlify.com/
+languageCode: en-us
+title: Carpal Tunnel Center
+theme: carpal-tunnel
+disableKinds: ["taxonomy", "taxonomyTerm",]
+
+# navigation
+menu:
+  main:
+    - name: Home
+      URL: /
+      weight: 1
+
+    - name: Our Team
+      URL: /our-team
+      weight: 2
+
+    - name: FAQ
+      URL: /faq
+      weight: 3
+
+    - name: About
+      URL: /about
+      weight: 4
+
+params:
+  logo: assets/images/elements/logo.svg
+  home: Home
+  # Meta data
+  description: This is meta description
+  author: modstud.io
+  # Google Analitycs
+  googleAnalitycsID: Your ID
+
+  topSection:
+    appointment_text: Make an appointment today
+
+  contact:
+    contact_heading: Contact form
+    locations_heading: Locations
+    phone: +48 693 960 538
+    cleveland_address_1: 5035 Mayfield Road, Suite 10
+    cleveland_address_2: Lyndhurst, OH 44124
+    cleveland_email: drgreen@dr-rodgreen.com
+    cleveland_phone: 440-449-8880
+    cleveland_hours_1: M-Th 9:30am-5:00pm
+    cleveland_hours_2: Fri 9:30am-2:00pm
+
+    lakewood_address_1: ERA - Mrs Ester Raizy Akerman
+    lakewood_address_2: 539 Marc Drive
+    lakewood_address_3: Lakewood, NJ 08701
+    lakewood_phone: 732-730-7333

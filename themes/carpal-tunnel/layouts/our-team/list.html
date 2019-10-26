@@ -2,7 +2,7 @@
   <section class="team">
     <div class="container">
       {{ range $i,$p := .Site.Data.team.member }}
-      <div class="team-item">
+      <div class="team-item" id="{{.id}}">
         <div class="row{{if (modBool $i 2)}} flex-row-reverse-lg{{end}}">
           <div class="col-12 col-sm-6 col-lg-5">
             <div class="team-item__img"><img class="img-responsive" src="{{.image | relURL}}" alt="{{.title}}"></div>

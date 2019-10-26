@@ -2,7 +2,7 @@
   <div class="container container--sm">
     <div class="home-team__header">
       <h2>{{.Site.Data.team.home_title}}</h2>
-      <a class="btn btn--default" href="team">Show all</a>
+      <a class="btn btn--default" href="/our-team">Show all</a>
     </div>
   </div>
   <div class="container">
@@ -11,13 +11,14 @@
       <div class="col-12 col-sm-6 col-lg-3">
         <div class="ht-block">
           <figure>
-            <img class="img-responsive" src="{{.image}}" alt="{{.title}}">
+            <div class="ht-block__img"><img class="img-responsive" src="{{.image}}" alt="{{.title}}"></div>
             <figcaption>
               <a class="icon-rounded" href="{{.linkedin_link}}" target="_blank"><i class="icon icon-linkedin"></i></a>
               <h4>{{.title}}</h4>
               <div class="ht-block__subheading">{{.specialty}}</div>
             </figcaption>
           </figure>
+          <a class="ht-block__link" href="/our-team#{{.id}}"></a>
         </div>
       </div>
       {{end}}

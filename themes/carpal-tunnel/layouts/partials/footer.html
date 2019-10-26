@@ -1,12 +1,15 @@
 <footer class="site-footer">
   <div class="container container--sm">
-    Copyright © 2019 <a href="#0">Carpal Tunnel Clinic</a>. All Rights reserved.
+    Copyright © 2019 Carpal Tunnel Clinic. All Rights reserved.
   </div>
 </footer>
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ $tinyslider := resources.Get "js/vendor/tiny-slider.js" }}
-{{ $js := slice $tinyslider| resources.Concat "assets/js/bundle.js" | minify }}
+{{ $validation := resources.Get "js/vendor/js-form-validator.js" }}
+{{ $mask_input := resources.Get "js/vendor/vanilla-masker.js" }}
+
+{{ $js := slice $tinyslider $validation $mask_input | resources.Concat "assets/js/bundle.js" | minify }}
 <script src="{{$js.RelPermalink}}"></script>
 
 {{ "<!-- Main Script -->" | safeHTML }}

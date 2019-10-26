@@ -1,6 +1,7 @@
 home_title: Our team
 member:
   - image: assets/images/page-images/dr_green.jpg
+    id: dr-green
     linkedin_link: '#'
     specialty: Hand surgeon
     text: >2-
@@ -25,11 +26,13 @@ member:
       BWC.
     title: 'Dr. Rodney Green, M.D. FACS'
   - image: assets/images/page-images/dr_bird.jpg
+    id: dr-bird
     linkedin_link: '#'
     specialty: Occupational Therapy Specialist
     text: ' Ms. Karen Bird is an Occupational Therapy Specialist who graduated with honors from Western Michigan University in 1979 and John Carroll University in 1989. She has been practicing occupational therapy for over 40 years in various positions, among them staff therapist at St. Vincent Charity Hospital and Health Center in Cleveland, OH. Ms. Bird works with Carpal Tunnel patients at the Carpal Tunnel Center’s Cleveland office to help our patients in their recovery after Surgery. She develops protocols to strengthen their hands and facilitate sensory recovery, using desensitizing techniques if needed. She also fashions thermoplastic splints when needed. She recommends equipment and orders it, for assisting in return to work if needed.'
     title: 'Ms. Karen N. Bird, MA OTRL'
   - image: assets/images/page-images/dr_green.jpg
+    id: dr-dusenbury
     linkedin_link: '#'
     specialty: Doctor of Physical Therapy
     text: >2-
@@ -43,9 +46,10 @@ member:
       (MSPT) Cleveland State University, Doctor of Physical Therapy (DPT)
       through University of Saint Augustine, FL. He completed a fellowship
       through the American Academy of Clinical Electrodiagnosis through which he
-      was certified in electroneuromyography (EMG/NCS) testing. 
+      was certified in electroneuromyography (EMG/NCS) testing.
     title: 'Dr. Kevin Dusenbury, DPT'
   - image: assets/images/page-images/mrs_akerman.jpg
+    id: mrs-akerman
     linkedin_link: '#'
     specialty: PA
     text: >2-

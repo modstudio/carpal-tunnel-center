@@ -6,14 +6,15 @@ media_folder: "themes/carpal-tunnel/static/assets/images/page-images"
 public_folder: "/assets/images/page-images"
 
 collections:
-  - label: "Team"
-    name: "team"
+  - label: "General"
+    name: "general"
     files:
       - name: "general_settings"
+        label: "General Settings"
         file: "config.yml"
         fields:
           - label: "Site Title"
-            name: "site_title"
+            name: "title"
             widget: "string"
   - label: "Team"
     name: "team"

@@ -16,6 +16,12 @@ collections:
           - label: "Site Title"
             name: "title"
             widget: "string"
+          - label: "Site Domain"
+            name: "baseURL"
+            widget: "string"
+          - label: "Logo"
+            name: "logo"
+            widget: "file"
   - label: "Team"
     name: "team"
     files:

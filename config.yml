@@ -24,7 +24,7 @@ menu:
       weight: 4
 
 params:
-  logo: assets/images/elements/logo.svg
+  logo: assets/images/page-images/logo.svg
   home: Home
   # Meta data
   description: This is meta description

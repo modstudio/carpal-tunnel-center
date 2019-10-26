@@ -20,7 +20,7 @@ collections:
             name: "baseURL"
             widget: "string"
           - label: "Logo"
-            name: "logo"
+            name: "params:logo"
             widget: "file"
   - label: "Team"
     name: "team"

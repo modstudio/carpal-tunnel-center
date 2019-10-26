@@ -25,7 +25,6 @@ menu:
 
 params:
   logo: assets/images/page-images/logo.svg
-  home: Home
   # Meta data
   description: This is meta description
   author: modstud.io

@@ -64,7 +64,7 @@ collections:
             - name: "cleveland_hours_2"
               label: "Working hours field #2"
               widget: "string"
-         - label: "Lakewood Office"
+        - label: "Lakewood Office"
            name: "lakewood"
            widget: "object"
            fields:

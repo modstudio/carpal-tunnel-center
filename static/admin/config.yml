@@ -6,10 +6,10 @@ media_folder: "themes/carpal-tunnel/static/assets/images/page-images"
 public_folder: "/assets/images/page-images"
 
 collections:
-  - label: "General"
-    name: "general"
-    files:
-      - file: "config.yml"
+  files:
+    - label: "General"
+      name: "general"
+      file: "config.yml"
         fields:
           - name: "general_settings"
             label: "General Settings"

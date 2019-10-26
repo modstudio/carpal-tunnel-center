@@ -6,7 +6,7 @@ media_folder: "themes/carpal-tunnel/static/assets/images/page-images"
 public_folder: "/assets/images/page-images"
 
 collections:
-  files:
+  - files:
     - label: "General"
       name: "general"
       file: "config.yml"
@@ -36,34 +36,32 @@ collections:
                 - label: "Contact Heading"
                   name: "contact_heading"
                   widget: "string"
-  - label: "Team"
-    name: "team"
-    files:
-      - name: "team_settings"
-        label: "Team Settings"
-        file: "themes/carpal-tunnel/data/team.yml"
-        fields:
-          - label: "Homepage Heading"
-            name: "home_title"
-            widget: "string"
-          - label: "Members"
-            name: "member"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "title", widget: "string"}
-              - {label: "Specialty", name: "specialty", widget: "string"}
-              - {label: "ID", name: "id", widget: "string"}
-              - {label: "Text", name: "text", widget: "markdown"}
-              - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
-              - {label: "Photo", name: "image", widget: "file"}
-          - label: "Additional Staff Heading"
-            name: "staff_title"
-            widget: "string"
-          - label: "Additional Staff"
-            name: "staff"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "title", widget: "string"}
-              - {label: "Specialty", name: "specialty", widget: "string"}
-              - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
-              - {label: "Photo", name: "image", widget: "file"}
+  - files:
+    - name: "team_settings"
+      label: "Team Settings"
+      file: "themes/carpal-tunnel/data/team.yml"
+      fields:
+        - label: "Homepage Heading"
+          name: "home_title"
+          widget: "string"
+        - label: "Members"
+          name: "member"
+          widget: "list"
+          fields:
+            - {label: "Name", name: "title", widget: "string"}
+            - {label: "Specialty", name: "specialty", widget: "string"}
+            - {label: "ID", name: "id", widget: "string"}
+            - {label: "Text", name: "text", widget: "markdown"}
+            - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
+            - {label: "Photo", name: "image", widget: "file"}
+        - label: "Additional Staff Heading"
+          name: "staff_title"
+          widget: "string"
+        - label: "Additional Staff"
+          name: "staff"
+          widget: "list"
+          fields:
+            - {label: "Name", name: "title", widget: "string"}
+            - {label: "Specialty", name: "specialty", widget: "string"}
+            - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
+            - {label: "Photo", name: "image", widget: "file"}

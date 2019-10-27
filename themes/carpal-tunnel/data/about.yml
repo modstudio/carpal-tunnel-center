@@ -1,23 +1,25 @@
-title: "
-        Founder and director  \
+about_text:
+  title: "
+          Founder and director  \
 
-        Dr. Rodney Green, M.D. FACS"
-photo: "assets/images/dr_green.jpg"
-text: "
-    Over the past thirty years, Dr. Green has practiced in the greater Cleveland area, after specialty training at the Cleveland Clinic Foundation. He is a Board-Certified Plastic Surgeon with additional Certification in Hand Surgery, through the American Board of Plastic Surgery.
-
-
-    In 1993, Dr. Green trained with Dr. John Agee, inventor of the Agee endoscopic carpal tunnel procedure and instrument. Doctor green adopted this technique for carpal tunnel release after that and has been using this technique ever since. Thousands of patients have had relief from their symptoms of carpal tunnel syndrome using this technique.
+          Dr. Rodney Green, M.D. FACS"
+  photo: "assets/images/dr_green.jpg"
+  text: "
+      Over the past thirty years, Dr. Green has practiced in the greater Cleveland area, after specialty training at the Cleveland Clinic Foundation. He is a Board-Certified Plastic Surgeon with additional Certification in Hand Surgery, through the American Board of Plastic Surgery.
 
 
-    The Carpal Tunnel Center has been recently established in Dr. Green’s Plastic Surgery offices to make the process of treating patients with Carpal Tunnel Syndrome more efficient and more available to those that need it. "
-clinic_image: "assets/images/clinic-image.jpg"
-clinic_title: "Our Clinic"
+      In 1993, Dr. Green trained with Dr. John Agee, inventor of the Agee endoscopic carpal tunnel procedure and instrument. Doctor green adopted this technique for carpal tunnel release after that and has been using this technique ever since. Thousands of patients have had relief from their symptoms of carpal tunnel syndrome using this technique.
+
+
+      The Carpal Tunnel Center has been recently established in Dr. Green’s Plastic Surgery offices to make the process of treating patients with Carpal Tunnel Syndrome more efficient and more available to those that need it. "
+clinic:
+  clinic_image: "assets/images/clinic-image.jpg"
+  clinic_title: "Our Clinic"
 process:
   - icon: "assets/images/consult_2.svg"
     text: "
       Consultation with Dr. Green at his office or by videoconference.  \
-      
+
       (We also offer initial screening at our satellite office in Lakewood NJ.) "
 
   - icon: "assets/images/arrangement_2.svg"

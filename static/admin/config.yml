@@ -159,6 +159,7 @@ collections:
         - label: "Slides Info"
           name: "item"
           widget: "list"
+          fields:
             - label: "Image"
               name: "image"
               widget: "file"

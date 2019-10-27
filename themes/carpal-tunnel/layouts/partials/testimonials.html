@@ -9,7 +9,13 @@
             <img class="img-responsive" src="{{.image}}" alt="{{.name}}">
           </div>
           <figure>
-            <blockquote>{{.text}}</blockquote>
+            <blockquote>
+              {{ if in (string .text) "\n\n" }}
+              {{ .text | markdownify }}
+              {{ else }}
+                <p>{{ .text | markdownify}}</p>
+              {{ end }}
+            </blockquote>
             <figcaption>
               <img class="testimonials-slider__item-rate" src="assets/images//stars.svg" alt="">
               <h4>{{.name}}</h4>

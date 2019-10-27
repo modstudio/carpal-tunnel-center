@@ -1,6 +1,6 @@
 home_title: Our team
 member:
-  - image: assets/images//dr_green.jpg
+  - image: assets/images/dr_green.jpg
     id: dr-green
     linkedin_link: '#'
     specialty: Hand surgeon
@@ -25,13 +25,13 @@ member:
       target='_blank' href='https://www.aaaasf.org'>AAAASF</a>, Medicare, and
       BWC.
     title: 'Dr. Rodney Green, M.D. FACS'
-  - image: assets/images//dr_bird.jpg
+  - image: assets/images/dr_bird.jpg
     id: dr-bird
     linkedin_link: '#'
     specialty: Occupational Therapy Specialist
     text: ' Ms. Karen Bird is an Occupational Therapy Specialist who graduated with honors from Western Michigan University in 1979 and John Carroll University in 1989. She has been practicing occupational therapy for over 40 years in various positions, among them staff therapist at St. Vincent Charity Hospital and Health Center in Cleveland, OH. Ms. Bird works with Carpal Tunnel patients at the Carpal Tunnel Center’s Cleveland office to help our patients in their recovery after Surgery. She develops protocols to strengthen their hands and facilitate sensory recovery, using desensitizing techniques if needed. She also fashions thermoplastic splints when needed. She recommends equipment and orders it, for assisting in return to work if needed.'
     title: 'Ms. Karen N. Bird, MA OTRL'
-  - image: assets/images//dr_green.jpg
+  - image: assets/images/dr_green.jpg
     id: dr-dusenbury
     linkedin_link: '#'
     specialty: Doctor of Physical Therapy
@@ -48,7 +48,7 @@ member:
       through the American Academy of Clinical Electrodiagnosis through which he
       was certified in electroneuromyography (EMG/NCS) testing.
     title: 'Dr. Kevin Dusenbury, DPT'
-  - image: assets/images//mrs_akerman.jpg
+  - image: assets/images/mrs_akerman.jpg
     id: mrs-akerman
     linkedin_link: '#'
     specialty: PA
@@ -61,11 +61,11 @@ member:
     title: 'Mrs. Ester Raizy Akerman, PA'
 staff_title: Additional staff
 staff:
-  - image: assets/images//kimberley_lucas.jpg
+  - image: assets/images/kimberley_lucas.jpg
     linkedin_link: '#'
     specialty: Office Manager
     title: Kimberley Lucas
-  - image: assets/images//roxanne_bennicci.jpg
+  - image: assets/images/roxanne_bennicci.jpg
     linkedin_link: '#'
     specialty: Patient Coordinator
     title: Roxanne Bennicci

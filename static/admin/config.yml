@@ -172,7 +172,7 @@ collections:
   - label: "FAQ"
     name: "faq"
     files:
-      - label: "FAQ Settings"
+      - label: "Settings"
         name: "faq_settings"
         file: "content/faq/_index.md"
         fields:
@@ -185,7 +185,7 @@ collections:
           - label: "Top section background image"
             name: "background"
             widget: "file"
-      - label: "FAQ Questions"
+      - label: "Questions"
         name: "faq_questions"
         file: "themes/carpal-tunnel/data/faq.yml"
         fields:
@@ -199,3 +199,21 @@ collections:
               - label: "Answer"
                 name: "answer"
                 widget: "markdown"
+  - label: "Testimonials"
+    name: "testimonials"
+    files:
+      - label: "Testimonials List"
+        name: "list"
+        file: "themes/carpal-tunnel/data/testimonials.yml"
+        fields:
+          - label: "Heading"
+            name: "heading"
+            widget: "string"
+          - label: "Testimonials List"
+            name: "review"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "title", widget: "string"}
+              - {label: "Additional Info", name: "company", widget: "string"}
+              - {label: "Photo", name: "image", widget: "file"}
+              - {label: "Text", name: "text", widget: "markdown"}

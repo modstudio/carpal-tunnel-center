@@ -13,7 +13,13 @@
               <div class="slideshow__text">
                 <div class="slideshow__nav"></div>
                 <h3>{{.heading}}</h3>
-                <p>{{.text | markdownify}}</p>
+                <div>
+                  {{ if in (string .text) "\n\n" }}
+                  {{ .text | markdownify }}
+                  {{ else }}
+                    <p>{{ .text | markdownify}}</p>
+                  {{ end }}
+                </div>
                 <a class="btn btn--default" href="about">Read more</a>
               </div>
             </div>

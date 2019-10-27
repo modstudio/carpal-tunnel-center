@@ -156,6 +156,22 @@ collections:
   - label: "Homepage"
     name: "homepage"
     files:
+    - label: "Page Settings"
+      name: "settings"
+      file: "content/_index.md"
+      fields:
+        - label: "Page Heading"
+          name: "title"
+          widget: "string"
+        - label: "Page Subheading"
+          name: "subheading"
+          widget: "text"
+        - label: "Description"
+          name: "description"
+          widget: "text"
+        - label: "Top section background image"
+          name: "background"
+          widget: "file"
     - label: "Slideshow"
       name: "slideshow"
       file: "themes/carpal-tunnel/data/slideshow.yml"
@@ -182,21 +198,6 @@ collections:
             - label: "Text"
               name: "text"
               widget: "markdown"
-    - label: "Testimonials"
-      name: "testimonials"
-      file: "themes/carpal-tunnel/data/testimonials.yml"
-      fields:
-        - label: "Heading"
-          name: "heading"
-          widget: "string"
-        - label: "Testimonials List"
-          name: "review"
-          widget: "list"
-          fields:
-            - {label: "Name", name: "name", widget: "string"}
-            - {label: "Additional Info", name: "company", widget: "string"}
-            - {label: "Photo", name: "image", widget: "file"}
-            - {label: "Text", name: "text", widget: "markdown"}
     - label: "Our process"
       name: "our_process"
       file: "themes/carpal-tunnel/data/our_process.yml"
@@ -213,10 +214,25 @@ collections:
           fields:
             - {label: "Icon", name: "icon", widget: "file"}
             - {label: "Text", name: "text", widget: "markdown"}
+    - label: "Testimonials"
+      name: "testimonials"
+      file: "themes/carpal-tunnel/data/testimonials.yml"
+      fields:
+        - label: "Heading"
+          name: "heading"
+          widget: "string"
+        - label: "Testimonials List"
+          name: "review"
+          widget: "list"
+          fields:
+            - {label: "Name", name: "name", widget: "string"}
+            - {label: "Additional Info", name: "company", widget: "string"}
+            - {label: "Photo", name: "image", widget: "file"}
+            - {label: "Text", name: "text", widget: "markdown"}
   - label: "FAQ"
     name: "faq"
     files:
-      - label: "Settings"
+      - label: "Page Settings"
         name: "faq_settings"
         file: "content/faq/_index.md"
         fields:

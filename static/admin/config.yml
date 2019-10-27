@@ -140,3 +140,31 @@ collections:
             - {label: "Specialty", name: "specialty", widget: "string"}
             - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
             - {label: "Photo", name: "image", widget: "file"}
+  - label: "Sections"
+    name: "sections"
+    files:
+    - label: "Homepage Slideshow"
+      name: "home_slideshow"
+      file: "themes/carpal-tunnel/data/slideshow.yml"
+      fields:
+        - label: "Heading"
+          name: "heading"
+          widget: "string"
+        - label: "Subheading"
+          name: "subheading"
+          widget: "string"
+        - label: "Slideshow Autoplay Time, ms"
+          name: "speed"
+          widget: "string"
+        - label: "Slides Info"
+          name: "item"
+          widget: "list"
+            - label: "Image"
+              name: "image"
+              widget: "file"
+            - label: "Heading"
+              name: "heading"
+              widget: "string"
+            - label: "Text"
+              name: "text"
+              widget: "markdown"

@@ -1,15 +1,6 @@
 {{ define "main" }}
-
   {{- partial "slideshow.html" . -}}
-
-  {{ if .Site.Data.our_process.process.enable }}
-
-    {{- partial "our-process.html" . -}}
-
-  {{ end }}
-
+  {{- partial "our-process.html" . -}}
   {{- partial "home-team.html" . -}}
-
   {{- partial "testimonials.html" . -}}
-
 {{ end }}

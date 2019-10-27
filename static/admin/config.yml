@@ -113,7 +113,7 @@ collections:
     name: "team"
     files:
     - name: "team_settings"
-      label: "Team Settings"
+      label: "Page Settings"
       file: "content/our-team/_index.md"
       fields:
         - label: "Page Title"
@@ -126,7 +126,7 @@ collections:
           name: "background"
           widget: "file"
     - name: "team_members"
-      label: "Team Members"
+      label: "Members"
       file: "themes/carpal-tunnel/data/team.yml"
       fields:
         - label: "Homepage Heading"
@@ -196,6 +196,22 @@ collections:
             - {label: "Name", name: "name", widget: "string"}
             - {label: "Additional Info", name: "company", widget: "string"}
             - {label: "Photo", name: "image", widget: "file"}
+            - {label: "Text", name: "text", widget: "markdown"}
+    - label: "Our process"
+      name: "our_process"
+      file: "themes/carpal-tunnel/data/our-process.yml"
+      fields:
+        - label: "Heading"
+          name: "heading"
+          widget: "string"
+        - label: "Subheading"
+          name: "subheading"
+          widget: "string"
+        - label: "Our Process List"
+          name: "item"
+          widget: "list"
+          fields:
+            - {label: "Icon", name: "icon", widget: "file"}
             - {label: "Text", name: "text", widget: "markdown"}
   - label: "FAQ"
     name: "faq"

@@ -2,14 +2,14 @@
   <div class="container container--sm">
     <div class="row">
       <div class="col-12 col-md-4">
-        <h2>{{.Site.Data.our_process.process.heading}}</h2>
-        <div class="home-process__subheading">{{.Site.Data.our_process.process.subheading}}</div>
+        <h2>{{.Site.Data.our_process.heading}}</h2>
+        <div class="home-process__subheading">{{.Site.Data.our_process.subheading}}</div>
       </div>
-      {{ range .Site.Data.our_process.process.item }}
+      {{ range .Site.Data.our_process.item }}
         <div class="col-12 col-sm-6 col-md-4">
           <div class="process-block">
             <div class="process-block__img"><img src="{{.icon}}" alt=""></div>
-            <p>{{.text | safeHTML}}</p>
+            <p>{{.text | markdownify}}</p>
           </div>
         </div>
       {{end}}

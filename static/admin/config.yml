@@ -199,7 +199,7 @@ collections:
             - {label: "Text", name: "text", widget: "markdown"}
     - label: "Our process"
       name: "our_process"
-      file: "themes/carpal-tunnel/data/our-process.yml"
+      file: "themes/carpal-tunnel/data/our_process.yml"
       fields:
         - label: "Heading"
           name: "heading"

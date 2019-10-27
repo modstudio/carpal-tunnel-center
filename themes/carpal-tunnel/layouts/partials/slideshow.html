@@ -13,7 +13,7 @@
               <div class="slideshow__text">
                 <div class="slideshow__nav"></div>
                 <h3>{{.heading}}</h3>
-                <p>{{.text}}</p>
+                <p>{{.text | markdownify}}</p>
                 <a class="btn btn--default" href="about">Read more</a>
               </div>
             </div>

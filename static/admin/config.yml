@@ -114,6 +114,19 @@ collections:
     files:
     - name: "team_settings"
       label: "Team Settings"
+      file: "content/our-team/_index.md"
+      fields:
+        - label: "Page Title"
+          name: "title"
+          widget: "string"
+        - label: "Description"
+          name: "description"
+          widget: "text"
+        - label: "Top section background image"
+          name: "background"
+          widget: "file"
+    - name: "team_members"
+      label: "Team Members"
       file: "themes/carpal-tunnel/data/team.yml"
       fields:
         - label: "Homepage Heading"
@@ -140,11 +153,11 @@ collections:
             - {label: "Specialty", name: "specialty", widget: "string"}
             - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
             - {label: "Photo", name: "image", widget: "file"}
-  - label: "Sections"
-    name: "sections"
+  - label: "Homepage"
+    name: "homepage"
     files:
-    - label: "Homepage Slideshow"
-      name: "home_slideshow"
+    - label: "Slideshow"
+      name: "slideshow"
       file: "themes/carpal-tunnel/data/slideshow.yml"
       fields:
         - label: "Heading"

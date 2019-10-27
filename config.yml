@@ -31,5 +31,4 @@ params:
   # Google Analitycs
   googleAnalitycsID: Your ID
 
-  topSection:
-    appointment_text: Make an appointment today
+  appointment_text: Make an appointment today

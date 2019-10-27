@@ -19,6 +19,26 @@ collections:
         - label: "Site Domain"
           name: "baseURL"
           widget: "string"
+        - label: "Language"
+          name: "languageCode"
+          widget: "hidden"
+        - label: "Theme"
+          name: "theme"
+          widget: "hidden"
+        - label: "Disable Kinds"
+          name: "disableKinds"
+          widget: "hidden"
+        - label: "Menu"
+          name: "menu"
+          widget: "hidden"
+          fields:
+            - label: "Main Menu"
+              name: "main"
+              widget: "list"
+              fields:
+                - {label: "Name", name: "name", widget: "string"}
+                - {label: "URL", name: "URL", widget: "string"}
+                - {label: "Position", name: "weight", widget: "string"}
         - label: "Parameters"
           name: "params"
           widget: "object"
@@ -29,6 +49,15 @@ collections:
             - name: "description"
               label: "Description"
               widget: "text"
+            - name: "author"
+              label: "Site Author"
+              widget: "string"
+            - name: "googleAnalitycsID"
+              label: "Google Analytics Code"
+              widget: "string"
+            - name: "appointment_text"
+              label: "Appointment Button Text"
+              widget: "string"
   - label: "Contact"
     name: "contact"
     files:

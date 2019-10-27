@@ -1,9 +1,37 @@
 list:
-  - question: "Lorem ipsum dolor sit amet enim?"
-    answer: "Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia."
-  - question: "Vestibulum dapibus, mauris nec malesuada?"
-    answer: "
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel.
+  - answer: >-
+      Carpal tunnel syndrome is caused by inflammation and swelling in the wrist
+      area that places pressure on the median nerve. You might be at risk for
+      carpal tunnel syndrome if you have diabetes, arthritis, or high blood
+      pressure, among other conditions, or if carpal tunnel syndrome runs in
+      your family. Indications of nerve compression include aches or pains in
+      your fingers, hand or arm, numbness or tingling, a weak thumb or
+      difficulty gripping. As the compression of the nerve worsens, you may
+      likely be forced out of work until you achieve relief.
+    question: Is carpal tunnel surgery right for you?
+  - answer: >-
+      In Open carpal tunnel surgery, which is the most common technique, the
+      surgeon makes a large incision in the center of the palm and cuts through
+      layers of skin and tissue to release the median nerve in the carpal
+      tunnel. Recovery takes longer because there is a wound on the palm itself
+      which is a high-pressure area on the hand.
 
 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel."
+      In the endoscopic carpal tunnel release, the surgeon makes a small
+      incision in the folds of the wrist and guides a thin tube containing a
+      telescope attached to a camera directly to the surgical site, where he
+      cuts the ligament forming the roof the carpal tunnel and releases pressure
+      on the median nerve. No splinting is required, just a bulky bandage.
+    question: Open carpal tunnel surgery vs Endoscopic carpal tunnel release
+  - answer: >-
+      The single-port endoscopic carpal tunnel release is the most advanced and
+      effective treatment for the pain, numbness and tingling caused by carpal
+      tunnel syndrome. No cutting through skin and tissue. No large stitches. No
+      long weeks of recovery. Instead, the surgeon makes a tiny incision in the
+      folds of the wrist and guides a thin tube containing a camera directly to
+      the surgical site, where he cuts the ligament surrounding the carpal
+      tunnel and releases pressure from the median nerve. The surgery takes
+      about 15 minutes. National Carpal Tunnel Center patients are often back at
+      work in as little as 48 hours, with only a tiny scar in the fold of the
+      wrist.
+    question: Benefits of single-port endoscopic carpal tunnel release

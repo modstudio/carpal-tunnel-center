@@ -8,8 +8,8 @@
           </div>
           <div class="col-12 col-lg-8">
             <div class="team-text odd">
-              <h2>{{.Site.Data.about.title | safeHTML}}</h2>
-              <div class="team-text__body">{{.Site.Data.about.text | safeHTML}}</div>
+              <h2>{{.Site.Data.about.title | markdownify}}</h2>
+              <div class="team-text__body">{{.Site.Data.about.text | markdownify}}</div>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@
           <div class="col-12 col-sm-6 col-md-3">
             <div class="process-block">
               <div class="process-block__img"><img src="{{.icon | relURL}}" alt=""></div>
-              <p>{{.text | safeHTML}}</p>
+              <p>{{.text | markdownify}}</p>
             </div>
           </div>
         {{end}}

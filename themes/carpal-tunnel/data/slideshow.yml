@@ -1,13 +1,42 @@
-heading: "Carpal Tunnel Center"
-subheading: "The efficient process that we offer includes:"
+heading: Carpal Tunnel Center
+subheading: 'The efficient process that we offer includes:'
 speed: 7000
 item:
-  - image: "assets/images/slideshow-1.jpg"
-    heading: "Better care, With reasonable pricing"
-    text: "The Carpal Tunnel Center team has many years of experience with treating carpal tunnel syndrome and this can be done efficiently in a private setting. We also accommodate patients with insurance and those that wish to pay out-of-pocket for the services, keeping the costs reasonable. "
-  - image: "assets/images/slideshow-2.jpg"
-    heading: "Endoscopic Carpal Tunnel Release"
-    text: "This is a minimal invasive procedure. In Open carpal tunnel surgery, which is the most common technique, the surgeon makes a large incision in the center of the palm and cuts through layers of skin and tissue to release the median nerve in the carpal tunnel. Recovery takes longer…"
-  - image: "assets/images/slideshow-3.jpg"
-    heading: "Top Surgeon"
-    text: "Entrust the future of your hands with a surgeon who values their intricacy. Dr. Rodney Green is a recognized expert in Hand Surgery. His precision as a plastic surgeon ensures that the tissues are handled carefully, and suturing is done expertly to avoid scarring. Dr. Green has over 30 years of experience…"
+  - heading: 'Better care, With reasonable pricing'
+    image: assets/images/slideshow-1.jpg
+    text: >-
+      The Carpal Tunnel Center team has many years of experience with treating
+      carpal tunnel syndrome and this can be done efficiently in a private
+      setting. We also accommodate patients with insurance and those that wish
+      to pay out-of-pocket for the services, keeping the costs reasonable. 
+  - heading: Endoscopic Carpal Tunnel Release
+    image: assets/images/slideshow-2.jpg
+    text: >-
+      This is a minimal invasive procedure. 
+
+
+      In Open carpal tunnel surgery, which is the most common technique, the
+      surgeon makes a large incision in the center of the palm and cuts through
+      layers of skin and tissue to release the median nerve in the carpal
+      tunnel. Recovery takes longer because there is a wound on the palm itself
+      which is a high-pressure area on the hand.
+
+
+      In the endoscopic carpal tunnel release, the surgeon makes a small
+      incision in the folds of the wrist and guides a thin tube containing a
+      telescope attached to a camera directly to the surgical site, where he
+      cuts the ligament forming the roof the carpal tunnel and releases pressure
+      on the median nerve. No splinting is required, just a bulky bandage.
+  - heading: Top Surgeon
+    image: assets/images/slideshow-3.jpg
+    text: >-
+      Entrust the future of your hands with a surgeon who values their
+      intricacy. 
+
+
+      Dr. Rodney Green is a recognized expert in Hand Surgery. His precision as
+      a plastic surgeon ensures that the tissues are handled carefully, and
+      suturing is done expertly to avoid scarring. Dr. Green has over 30 years
+      of experience and has performed over 1,000 successful Carpal Tunnel
+      Surgeries. He is dedicated to treating every patient with care and
+      respect, with the recognition that your hands are precious.

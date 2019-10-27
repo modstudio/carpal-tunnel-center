@@ -1,34 +1,27 @@
-baseURL: https://carpaltunnelcenter.netlify.com/
-languageCode: en-us
 title: Carpal Tunnel Center
+baseURL: 'https://carpaltunnelcenter.netlify.com/'
+languageCode: en-us
 theme: carpal-tunnel
-disableKinds: ["taxonomy", "taxonomyTerm",]
-
-# navigation
+disableKinds:
+  - taxonomy
+  - taxonomyTerm
 menu:
   main:
-    - name: Home
-      URL: /
+    - URL: /
+      name: Home
       weight: 1
-
-    - name: Our Team
-      URL: /our-team
+    - URL: /our-team
+      name: Our Team
       weight: 2
-
-    - name: FAQ
-      URL: /faq
+    - URL: /faq
+      name: FAQ
       weight: 3
-
-    - name: About
-      URL: /about
+    - URL: /about
+      name: About
       weight: 4
-
 params:
-  logo: assets/images/page-images/logo.svg
-  # Meta data
-  description: This is meta description
-  author: modstud.io
-  # Google Analitycs
-  googleAnalitycsID: Your ID
-
   appointment_text: Make an appointment today
+  author: modstud.io
+  description: This is meta description for this site
+  googleAnalitycsID: Your ID
+  logo: assets/images/page-images/logo.svg

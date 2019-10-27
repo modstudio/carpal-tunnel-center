@@ -6,7 +6,13 @@
           <li class="faq-item">
             <h4>{{.question}}</h4>
             <div class="faq-item__body">
-              <div class="faq-item__body-inner">{{.answer | safeHTML}}</div>
+              <div class="faq-item__body-inner">
+                {{ if in (string .text) "\n\n" }}
+                  {{ .answer | markdownify }}
+                {{ else }}
+                  <p>{{.answer | markdownify}}</p>
+                {{ end }}
+              </div>
             </div>
           </li>
         {{ end }}

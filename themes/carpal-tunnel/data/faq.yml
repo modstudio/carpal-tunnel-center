@@ -1,6 +1,9 @@
 list:
   - question: "Lorem ipsum dolor sit amet enim?"
-    answer: "<p>Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia.</p>"
+    answer: "Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia."
   - question: "Vestibulum dapibus, mauris nec malesuada?"
-    answer: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel.</p>"
+    answer: "
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel.
+
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel."

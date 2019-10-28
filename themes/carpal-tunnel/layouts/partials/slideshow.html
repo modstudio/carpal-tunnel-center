@@ -1,4 +1,4 @@
-<section class="slideshow">
+<section class="slideshow" id="{{.Site.Data.slideshow.id}}">
   <div class="container">
     <div class="slideshow__wrap" data-speed="{{.Site.Data.slideshow.speed}}">
       {{ range .Site.Data.slideshow.item }}
@@ -20,7 +20,9 @@
                     <p>{{ .text | markdownify}}</p>
                   {{ end }}
                 </div>
-                <a class="btn btn--default" href="about">Read more</a>
+                {{ if .button }}
+                   <a class="btn btn--default" href="{{.button_link}}">Read more</a>
+                 {{ end }}
               </div>
             </div>
           </div>

@@ -1,16 +1,21 @@
 heading: Carpal Tunnel Center
 subheading: 'The efficient process that we offer includes:'
 speed: 7000
+id: slideshow
 item:
   - heading: 'Better care, With reasonable pricing'
     image: assets/images/slideshow-1.jpg
+    button: true
+    button_link: "about"
     text: >-
       The Carpal Tunnel Center team has many years of experience with treating
       carpal tunnel syndrome and this can be done efficiently in a private
       setting. We also accommodate patients with insurance and those that wish
-      to pay out-of-pocket for the services, keeping the costs reasonable. 
+      to pay out-of-pocket for the services, keeping the costs reasonable.
   - heading: Endoscopic Carpal Tunnel Release
     image: assets/images/slideshow-2.jpg
+    button: true
+    button_link: "about"
     text: >-
       This is a minimal invasive procedure. In the endoscopic carpal tunnel
       release, the surgeon makes a small incision in the folds of the wrist and
@@ -20,6 +25,8 @@ item:
       required, just a bulky bandage.
   - heading: Top Surgeon
     image: assets/images/slideshow-3.jpg
+    button: true
+    button_link: "faq/#question_2"
     text: >-
       Entrust the future of your hands with a surgeon who values their
       intricacy. Dr. Rodney Green is a recognized expert in Hand Surgery. His

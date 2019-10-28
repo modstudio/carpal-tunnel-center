@@ -9,6 +9,7 @@ list:
       difficulty gripping. As the compression of the nerve worsens, you may
       likely be forced out of work until you achieve relief.
     question: Is carpal tunnel surgery right for you?
+    id: question_1
   - answer: >-
       In Open carpal tunnel surgery, which is the most common technique, the
       surgeon makes a large incision in the center of the palm and cuts through
@@ -23,6 +24,7 @@ list:
       cuts the ligament forming the roof the carpal tunnel and releases pressure
       on the median nerve. No splinting is required, just a bulky bandage.
     question: Open carpal tunnel surgery vs Endoscopic carpal tunnel release
+    id: question_2
   - answer: >-
       The single-port endoscopic carpal tunnel release is the most advanced and
       effective treatment for the pain, numbness and tingling caused by carpal
@@ -35,3 +37,4 @@ list:
       work in as little as 48 hours, with only a tiny scar in the fold of the
       wrist.
     question: Benefits of single-port endoscopic carpal tunnel release
+    id: question_3

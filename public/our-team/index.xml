@@ -2,13 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Meet Our Team on Carpal Tunnel Center</title>
-    <link>https://flamboyant-feynman-6fa3ca.netlify.com/our-team/</link>
+    <link>https://carpaltunnelcenter.netlify.com/our-team/</link>
     <description>Recent content in Meet Our Team on Carpal Tunnel Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
     
-	<atom:link href="https://flamboyant-feynman-6fa3ca.netlify.com/our-team/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://carpaltunnelcenter.netlify.com/our-team/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

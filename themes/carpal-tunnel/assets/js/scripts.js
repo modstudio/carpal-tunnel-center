@@ -95,7 +95,7 @@ if (testimonialSlider){
 
 // FAQ
 let faqItem = document.querySelectorAll(".faq-item");
-if (faqItem){
+function faq_open() {
   faqItem.forEach(function (element, index) {
     element.addEventListener('click',function(e){
       let faqBody = element.querySelector(".faq-item__body-inner");
@@ -110,6 +110,16 @@ if (faqItem){
         faqBodyOuter.style.height = '0px';
       }
     });
+  });
+}
+if (faqItem){
+  faq_open();
+  let pageHash = window.location.hash.substr(1);
+  faqItem.forEach(function (element, index) {
+    let faqItemId = element.getAttribute("id");
+    if (pageHash === faqItemId){
+      element.click()
+    }
   });
 }
 

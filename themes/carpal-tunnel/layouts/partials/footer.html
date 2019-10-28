@@ -15,7 +15,7 @@
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/scripts.js"}}
 {{ $script_dest := slice $script | resources.Concat "assets/js/scripts.js"}}
-<script src="{{ $script_dest.Permalink }}"></script>
+<script src="{{ $script_dest.RelPermalink }}"></script>
 
 
 {{ "<!-- google analitycs -->" | safeHTML }}

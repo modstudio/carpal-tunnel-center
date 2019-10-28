@@ -3,7 +3,7 @@
     <div class="container container--sm">
       <ul class="faq-list">
         {{ range .Site.Data.faq.list }}
-          <li class="faq-item">
+          <li class="faq-item" id="{{.id}}">
             <h4>{{.question}}</h4>
             <div class="faq-item__body">
               <div class="faq-item__body-inner">

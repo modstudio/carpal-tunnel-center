@@ -1,10 +1,11 @@
 heading: "Our process"
 subheading: "The efficient process that we offer includes:"
+id: home_process
 item:
   - icon: "assets/images/consult.svg"
     text: "
           Consultation with Dr. Green at his office or by videoconference.  \
-          
+
           (We also offer initial screening at our satellite office in Lakewood NJ.) "
 
   - icon: "assets/images/arrangement.svg"

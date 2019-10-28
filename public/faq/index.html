@@ -11,11 +11,11 @@
 
   
   
-  <link rel="stylesheet" href="/assets/css/main.min.6437cda246f0f95fbda9609b5a710974e31a5d2240cf70e67e00e01fb807a0c3.css" integrity="sha256-ZDfNokbw&#43;V&#43;9qWCbWnEJdOMaXSJAz3DmfgDgH7gHoMM=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/assets/css/main.min.db5baf2dc1d6db22e0068b72accdbda41bbae0b6385322f921f4dbe1b893fed2.css" integrity="sha256-21uvLcHW2yLgBotyrM29pBu64LY4UyL5IfTb4biT/tI=" crossorigin="anonymous" media="screen" />
 
 </head>
 <body><header class="site-header">
-  <a class="site-header__logo" href="https://flamboyant-feynman-6fa3ca.netlify.com/"><img src="/assets/images//logo.svg" alt="Carpal Tunnel Center"></a>
+  <a class="site-header__logo" href="https://carpaltunnelcenter.netlify.com/"><img src="/assets/images/logo.svg" alt="Carpal Tunnel Center"></a>
   <button class="toggle-menu d-none-lg" type="button">
     <span class="toggle-menu__inner"></span>
   </button>
@@ -42,7 +42,7 @@
             
         
         
-        <li class="site-nav__item active">
+        <li class="site-nav__item ">
           <a class="site-nav__link" href="/faq">FAQ</a>
         </li>
       
@@ -59,13 +59,13 @@
         </li>
     </ul>
   </nav>
-  <a href="tel:48693960538" class="site-header__call">
+  <a href="tel:4404498880" class="site-header__call">
     <div class="site-header__call-icon"><i class="icon icon-mobile"></i></div>
-    <div class="d-none d-block-lg">Call to our clinic: <span>&#43;48 693 960 538</span></div>
+    <div class="d-none d-block-lg">Call to our clinic: <span>440-449-8880</span></div>
   </a>
   <a class="btn btn--light" href="#contact">Contact Us</a>
 </header>
-<div class="top-section" style="background-image: url(/assets/images//faq-background.jpg)">
+<div class="top-section" style="background-image: url(/assets/images/faq-background.jpg)">
   <div class="container container--sm">
     <div class="row">
       <div class="col-12 col-md-6">
@@ -93,17 +93,39 @@
     <div class="container container--sm">
       <ul class="faq-list">
         
-          <li class="faq-item">
-            <h4>Lorem ipsum dolor sit amet enim?</h4>
+          <li class="faq-item" id="question_1">
+            <h4>Is carpal tunnel surgery right for you?</h4>
             <div class="faq-item__body">
-              <div class="faq-item__body-inner"><p>Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia.</p></div>
+              <div class="faq-item__body-inner">
+                
+                  <p>Carpal tunnel syndrome is caused by inflammation and swelling in the wrist area that places pressure on the median nerve. You might be at risk for carpal tunnel syndrome if you have diabetes, arthritis, or high blood pressure, among other conditions, or if carpal tunnel syndrome runs in your family. Indications of nerve compression include aches or pains in your fingers, hand or arm, numbness or tingling, a weak thumb or difficulty gripping. As the compression of the nerve worsens, you may likely be forced out of work until you achieve relief.</p>
+                
+              </div>
             </div>
           </li>
         
-          <li class="faq-item">
-            <h4>Vestibulum dapibus, mauris nec malesuada?</h4>
+          <li class="faq-item" id="question_2">
+            <h4>Open carpal tunnel surgery vs Endoscopic carpal tunnel release</h4>
             <div class="faq-item__body">
-              <div class="faq-item__body-inner"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel.</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam esse officiis animi repellendus reiciendis eum at ipsam quibusdam soluta, vel.</p></div>
+              <div class="faq-item__body-inner">
+                
+                  <p><p>In Open carpal tunnel surgery, which is the most common technique, the surgeon makes a large incision in the center of the palm and cuts through layers of skin and tissue to release the median nerve in the carpal tunnel. Recovery takes longer because there is a wound on the palm itself which is a high-pressure area on the hand.</p>
+
+<p>In the endoscopic carpal tunnel release, the surgeon makes a small incision in the folds of the wrist and guides a thin tube containing a telescope attached to a camera directly to the surgical site, where he cuts the ligament forming the roof the carpal tunnel and releases pressure on the median nerve. No splinting is required, just a bulky bandage.</p>
+</p>
+                
+              </div>
+            </div>
+          </li>
+        
+          <li class="faq-item" id="question_3">
+            <h4>Benefits of single-port endoscopic carpal tunnel release</h4>
+            <div class="faq-item__body">
+              <div class="faq-item__body-inner">
+                
+                  <p>The single-port endoscopic carpal tunnel release is the most advanced and effective treatment for the pain, numbness and tingling caused by carpal tunnel syndrome. No cutting through skin and tissue. No large stitches. No long weeks of recovery. Instead, the surgeon makes a tiny incision in the folds of the wrist and guides a thin tube containing a camera directly to the surgical site, where he cuts the ligament surrounding the carpal tunnel and releases pressure from the median nerve. The surgery takes about 15 minutes. National Carpal Tunnel Center patients are often back at work in as little as 48 hours, with only a tiny scar in the fold of the wrist.</p>
+                
+              </div>
             </div>
           </li>
         
@@ -116,31 +138,32 @@
       <div class="col-12 col-sm-7 col-lg-8">
         <div class="form">
           <h2>Contact form</h2>
-          <form>
+          <form name="contact-form" data-netlify="true" netlify-honeypot="not-for-humans">
+            <input class="d-none" name="not-for-humans" />
             <div class="row gutter-20">
               <div class="col-12 col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Full name">
+                  <input class="form-control" type="text" name="name" placeholder="Full name" data-rule="required|name">
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="email" placeholder="Email address">
+                  <input class="form-control" type="email" name="email" placeholder="Email address" data-rule="required|email">
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Phone number">
+                  <input class="form-control" type="text" name="phone" placeholder="Phone number" data-rule="required|phone_number-14">
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="form-group">
-                  <input class="form-control" type="text" placeholder="Appointment date">
+                  <input class="form-control" type="text" name="date" placeholder="Appointment date" data-rule="required|date-10">
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" placeholder="Text message"></textarea>
+              <textarea class="form-control" name="message" placeholder="Text message" data-rule="required"></textarea>
             </div>
             <button class="btn btn--default" type="submit">Send message</button>
           </form>
@@ -153,7 +176,7 @@
           <div class="locations__subheading">Main Office</div>
           <div class="locations__text">
             <i class="icon icon-location"></i>
-            <div>5035 Mayfield Road, Suite 100</div>
+            <div>5035 Mayfield Road, Suite 10</div>
             <div>Lyndhurst, OH 44124</div>
           </div>
           <div class="locations__text">
@@ -187,11 +210,14 @@
 </section>
 <footer class="site-footer">
   <div class="container container--sm">
-    Copyright © 2019 <a href="#0">Carpal Tunnel Clinic</a>. All Rights reserved.
+    Copyright © 2019 Carpal Tunnel Clinic. All Rights reserved.
   </div>
 </footer>
 
 <!-- JS Plugins -->
+
+
+
 
 
 <script src="/assets/js/bundle.min.js"></script>
@@ -199,7 +225,7 @@
 <!-- Main Script -->
 
 
-<script src="https://flamboyant-feynman-6fa3ca.netlify.com/assets/js/scripts.js"></script>
+<script src="/assets/js/scripts.js"></script>
 
 
 <!-- google analitycs -->

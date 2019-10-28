@@ -1,4 +1,5 @@
 home_title: Our team
+home_id: team
 member:
   - image: assets/images/dr_green.jpg
     id: dr-green
@@ -61,6 +62,7 @@ member:
       Lakewood, NJ.
     title: 'Mrs. Ester Raizy Akerman, PA'
 staff_title: Additional staff
+staff_id: staff
 staff:
   - image: assets/images/kimberley_lucas.jpg
     linkedin_link: '#'

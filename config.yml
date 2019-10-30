@@ -22,8 +22,9 @@ menu:
 params:
   appointment_text: Make an appointment today
   author: modstud.io
-  description: This is meta description for this site
-  images:
-  - assets/images/carpal-tunnel-center.jpg
+  description: >-
+    The Carpal Tunnel Center specializes in single-port endoscopic carpal tunnel
+    release .Personalized care by our team of experts ensures that you are in
+    good hands.
   googleAnalitycsID: Your ID
   logo: assets/images/logo.svg

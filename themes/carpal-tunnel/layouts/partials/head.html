@@ -14,11 +14,12 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "assets/favicon/favicon-32x32.png" | relURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "assets/favicon/favicon-16x16.png" | relURL }}">
 <link rel="manifest" href="{{ "assets/favicon/site.webmanifest" | relURL }}">
-<link rel="mask-icon" href="{{ "assets/favicon/safari-pinned-tab.svg" | relURL }}" color="#5bbad5">
+<link rel="mask-icon" href="{{ "assets/favicon/safari-pinned-tab.svg" | relURL }}" color="#16bafb">
 <link rel="shortcut icon" href="{{ "assets/favicon/favicon.ico" | relURL }}">
-<meta name="msapplication-TileColor" content="#16bafb">
+<meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-config" content="{{ "assets/favicon/browserconfig.xml" | relURL }}">
 <meta name="theme-color" content="#ffffff">
+
 
 {{ $cssOpts := (dict "targetPath" "assets/css/main.css" ) }}
 {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.css" . | toCSS $cssOpts | minify | fingerprint }}

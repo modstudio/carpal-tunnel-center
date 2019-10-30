@@ -23,5 +23,7 @@ params:
   appointment_text: Make an appointment today
   author: modstud.io
   description: This is meta description for this site
+  images:
+  - assets/images/carpal-tunnel-center.jpg
   googleAnalitycsID: Your ID
   logo: assets/images/logo.svg

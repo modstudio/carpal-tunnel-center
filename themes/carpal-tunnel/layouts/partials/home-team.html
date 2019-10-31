@@ -13,7 +13,9 @@
           <figure>
             <div class="ht-block__img"><img class="img-responsive" src="{{.image}}" alt="{{.title}}"></div>
             <figcaption>
-              <a class="icon-rounded" href="{{.linkedin_link}}" target="_blank"><i class="icon icon-linkedin"></i></a>
+              {{ with .linkedin_link }}
+              <a class="icon-rounded" href="{{.}}" target="_blank"><i class="icon icon-linkedin"></i></a>
+              {{ end }}
               <h4>{{.title}}</h4>
               <div class="ht-block__subheading">{{.specialty}}</div>
             </figcaption>

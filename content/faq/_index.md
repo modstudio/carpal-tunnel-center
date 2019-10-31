@@ -6,4 +6,3 @@ description: >-
   release. And more...
 background: assets/images/faq-background.jpg
 ---
-

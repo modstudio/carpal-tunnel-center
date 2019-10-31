@@ -7,8 +7,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
-{{ template "_internal/opengraph.html" . }}
-{{ template "_internal/twitter_cards.html" . }}
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{.Title }}{{ end }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ if .IsHome }}<meta property="og:image" content="{{.Site.Params.images | absURL }}">{{ else }}
+{{ with .Params.images }}<meta property="og:image" content="{{.}}">{{ else }}
+<meta property="og:image" content="{{.Site.Params.images | absURL }}">
+{{ end }}{{ end }}
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:url" content="{{ .Permalink }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{.Title }}{{ end }}"/>
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}"/>
+{{ if .IsHome }}<meta name="twitter:image" content="{{.Site.Params.images | absURL }}">{{ else }}
+{{ with .Params.images }}<meta name="twitter:image" content="{{.}}">{{ else }}
+<meta name="twitter:image" content="{{.Site.Params.images | absURL }}">
+{{ end }}{{ end }}
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "assets/favicon/apple-touch-icon.png" | relURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "assets/favicon/favicon-32x32.png" | relURL }}">

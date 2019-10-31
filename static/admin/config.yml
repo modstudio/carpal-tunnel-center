@@ -52,6 +52,7 @@ collections:
             - name: "images"
               label: "Meta Image"
               widget: "file"
+              required: false
             - name: "author"
               label: "Site Author"
               widget: "string"
@@ -131,6 +132,7 @@ collections:
         - name: "images"
           label: "Meta Image"
           widget: "file"
+          required: false
         - label: "Top section background image"
           name: "background"
           widget: "file"
@@ -226,6 +228,7 @@ collections:
         - name: "images"
           label: "Meta Image"
           widget: "file"
+          required: false
         - label: "Top section background image"
           name: "background"
           widget: "file"
@@ -281,6 +284,7 @@ collections:
           - name: "images"
             label: "Meta Image"
             widget: "file"
+            required: false
           - label: "Top section background image"
             name: "background"
             widget: "file"
@@ -318,6 +322,7 @@ collections:
           - name: "images"
             label: "Meta Image"
             widget: "file"
+            required: false
           - label: "Top section background image"
             name: "background"
             widget: "file"

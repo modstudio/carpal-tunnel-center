@@ -127,6 +127,7 @@ return false;
      btn.innerHTML = 'Sending...';
      grecaptcha.ready(function() {
        grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
+         console.log('hello');
          var data = new FormData(form);
          data.append('g-recaptcha-response', token);
          console.log(token);
@@ -155,6 +156,7 @@ return false;
            btn.innerHTML = 'SUBMIT';
          }
          request.open(this.method, this.action);
+         console.log('bye');
          request.send(data);
      });
    });

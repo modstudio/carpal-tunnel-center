@@ -129,7 +129,7 @@ return false;
        grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'e-commerce'}).then(function(token) {
          console.log('hello');
          var data = new FormData(form);
-         data.append('g-recaptcha-response', token);
+         data.append('g-recaptcha-response', '2322323');
          console.log(token);
          console.log(data.get('g-recaptcha-response'));
          var request = new XMLHttpRequest();

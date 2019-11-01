@@ -155,7 +155,7 @@ return false;
          request.onerror = function(err) {
            btn.innerHTML = 'SUBMIT';
          }
-         request.open(this.method, this.action);
+         request.open(form.method, form.action);
          console.log('bye');
          request.send(data);
      });

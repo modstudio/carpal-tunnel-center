@@ -126,7 +126,7 @@ return false;
      var btn = form.querySelector('button[type=submit]');
      btn.innerHTML = 'Sending...';
      grecaptcha.ready(function() {
-       grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'e-commerce'}).then(function(token) {
+       grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
          console.log('hello');
          var data = new FormData(form);
          data.append('g-recaptcha-response', '2322323');

@@ -169,34 +169,34 @@ const scrollToElem = (startTime, currentTime, duration, scrollEndElemTop, startS
 
 // Form Validation
 
-let formHandle = document.querySelector('form[name="contact-form"]');
-let options = {
-    rules: {
-      phone_number: function (value, params) {
-        return this.min(value.replace(/\s{2,}/g, ' ').length, params);
-      },
-      date: function (value, params) {
-        return this.min(value.replace(/\s{2,}/g, ' ').length, params);
-      },
-    },
-    messages: {
-      en: {
-        phone_number: {
-          empty: 'This field is required',
-          incorrect: 'Please enter correct phone number'
-        },
-        date: {
-          empty: 'This field is required',
-          incorrect: 'Please enter correct date'
-        }
-      }
-    }
-  };
-
-// Got to validation
-new Validator(formHandle, function (err, res) {
-    return res;
-}, options);
-
-VMasker(document.querySelector('[name="phone"]')).maskPattern("(999) 999-9999");
-VMasker(document.querySelector('[name="date"]')).maskPattern("99/99/9999");
+// let formHandle = document.querySelector('form[name="contact-form"]');
+// let options = {
+//     rules: {
+//       phone_number: function (value, params) {
+//         return this.min(value.replace(/\s{2,}/g, ' ').length, params);
+//       },
+//       date: function (value, params) {
+//         return this.min(value.replace(/\s{2,}/g, ' ').length, params);
+//       },
+//     },
+//     messages: {
+//       en: {
+//         phone_number: {
+//           empty: 'This field is required',
+//           incorrect: 'Please enter correct phone number'
+//         },
+//         date: {
+//           empty: 'This field is required',
+//           incorrect: 'Please enter correct date'
+//         }
+//       }
+//     }
+//   };
+//
+// // Got to validation
+// new Validator(formHandle, function (err, res) {
+//     return res;
+// }, options);
+//
+// VMasker(document.querySelector('[name="phone"]')).maskPattern("(999) 999-9999");
+// VMasker(document.querySelector('[name="date"]')).maskPattern("99/99/9999");

@@ -119,8 +119,9 @@ return false;
 
 </script>-->
 <script>
-   document.querySelector('form[name="contact-form"').onsubmit = function(event) {
+   document.querySelector('form[name=contact-form]').onsubmit = function(event) {
      event.preventDefault();
+     console.log("hi");
      var form = this;
      var btn = form.querySelector('button[type=submit]');
      btn.innerHTML = 'Sending...';

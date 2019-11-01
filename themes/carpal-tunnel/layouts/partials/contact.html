@@ -156,6 +156,7 @@ return false;
            btn.innerHTML = 'SUBMIT';
          }
          request.open(form.method, form.action);
+         request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
          console.log('bye');
          request.send(data);
      });

@@ -3,19 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://carpaltunnelcenter.netlify.com/about/</loc>
+    <loc>http://carpaltunnelcenter.com/about/</loc>
   </url>
   
   <url>
-    <loc>https://carpaltunnelcenter.netlify.com/faq/</loc>
+    <loc>http://carpaltunnelcenter.com/faq/</loc>
   </url>
   
   <url>
-    <loc>https://carpaltunnelcenter.netlify.com/</loc>
+    <loc>http://carpaltunnelcenter.com/</loc>
   </url>
   
   <url>
-    <loc>https://carpaltunnelcenter.netlify.com/our-team/</loc>
+    <loc>http://carpaltunnelcenter.com/our-team/</loc>
+  </url>
+  
+  <url>
+    <loc>http://carpaltunnelcenter.com/_404/</loc>
   </url>
   
 </urlset>

@@ -39,5 +39,5 @@
 {{ $cssOpts := (dict "targetPath" "assets/css/main.css" ) }}
 {{ $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.css" . | toCSS $cssOpts | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-
+<script src="https://www.google.com/recaptcha/api.js?render=6LdeY8AUAAAAAIxQlgGzs1GGcNbNLdstm9k6Noxp" async defer></script>
 </head>

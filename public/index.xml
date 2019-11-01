@@ -2,13 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Get relief from your carpal tunnel syndrome today on Carpal Tunnel Center</title>
-    <link>https://carpaltunnelcenter.netlify.com/</link>
+    <link>http://carpaltunnelcenter.com/</link>
     <description>Recent content in Get relief from your carpal tunnel syndrome today on Carpal Tunnel Center</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://carpaltunnelcenter.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://carpaltunnelcenter.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Page not found</title>
+      <link>http://carpaltunnelcenter.com/_404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://carpaltunnelcenter.com/_404/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

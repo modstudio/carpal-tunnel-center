@@ -49,6 +49,10 @@ collections:
             - name: "description"
               label: "Description"
               widget: "text"
+            - name: "images"
+              label: "Meta Image"
+              widget: "file"
+              required: false
             - name: "author"
               label: "Site Author"
               widget: "string"
@@ -125,6 +129,10 @@ collections:
         - label: "Description"
           name: "description"
           widget: "text"
+        - name: "images"
+          label: "Meta Image"
+          widget: "file"
+          required: false
         - label: "Top section background image"
           name: "background"
           widget: "file"
@@ -217,6 +225,10 @@ collections:
         - label: "Description"
           name: "description"
           widget: "text"
+        - name: "images"
+          label: "Meta Image"
+          widget: "file"
+          required: false
         - label: "Top section background image"
           name: "background"
           widget: "file"
@@ -239,7 +251,7 @@ collections:
             - {label: "Specialty", name: "specialty", widget: "string"}
             - {label: "ID", name: "id", widget: "string"}
             - {label: "Text", name: "text", widget: "markdown"}
-            - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
+            - {label: "Link to Linkedin", name: "linkedin_link", widget: "string", required: false}
             - {label: "Photo", name: "image", widget: "file"}
         - label: "Additional Staff Heading"
           name: "staff_title"
@@ -254,7 +266,7 @@ collections:
           fields:
             - {label: "Name", name: "title", widget: "string"}
             - {label: "Specialty", name: "specialty", widget: "string"}
-            - {label: "Link to Linkedin", name: "linkedin_link", widget: "string"}
+            - {label: "Link to Linkedin", name: "linkedin_link", widget: "string", required: false}
             - {label: "Photo", name: "image", widget: "file"}
   - label: "FAQ"
     name: "faq"
@@ -269,6 +281,10 @@ collections:
           - label: "Description"
             name: "description"
             widget: "text"
+          - name: "images"
+            label: "Meta Image"
+            widget: "file"
+            required: false
           - label: "Top section background image"
             name: "background"
             widget: "file"
@@ -303,6 +319,10 @@ collections:
           - label: "Description"
             name: "description"
             widget: "text"
+          - name: "images"
+            label: "Meta Image"
+            widget: "file"
+            required: false
           - label: "Top section background image"
             name: "background"
             widget: "file"

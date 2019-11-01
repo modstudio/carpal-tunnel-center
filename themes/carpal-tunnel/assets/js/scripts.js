@@ -169,34 +169,79 @@ const scrollToElem = (startTime, currentTime, duration, scrollEndElemTop, startS
 
 // Form Validation
 
-// let formHandle = document.querySelector('form[name="contact-form"]');
-// let options = {
-//     rules: {
-//       phone_number: function (value, params) {
-//         return this.min(value.replace(/\s{2,}/g, ' ').length, params);
-//       },
-//       date: function (value, params) {
-//         return this.min(value.replace(/\s{2,}/g, ' ').length, params);
-//       },
-//     },
-//     messages: {
-//       en: {
-//         phone_number: {
-//           empty: 'This field is required',
-//           incorrect: 'Please enter correct phone number'
-//         },
-//         date: {
-//           empty: 'This field is required',
-//           incorrect: 'Please enter correct date'
-//         }
-//       }
-//     }
-//   };
-//
-// // Got to validation
-// new Validator(formHandle, function (err, res) {
-//     return res;
-// }, options);
-//
-// VMasker(document.querySelector('[name="phone"]')).maskPattern("(999) 999-9999");
-// VMasker(document.querySelector('[name="date"]')).maskPattern("99/99/9999");
+let formHandle = document.querySelector('form[name="contact-form"]');
+let options = {
+    rules: {
+      phone_number: function (value, params) {
+        return this.min(value.replace(/\s{2,}/g, ' ').length, params);
+      },
+      date: function (value, params) {
+        return this.min(value.replace(/\s{2,}/g, ' ').length, params);
+      },
+    },
+    messages: {
+      en: {
+        phone_number: {
+          empty: 'This field is required',
+          incorrect: 'Please enter correct phone number'
+        },
+        date: {
+          empty: 'This field is required',
+          incorrect: 'Please enter correct date'
+        }
+      }
+    }
+  };
+
+// Got to validation
+new Validator(formHandle, function (err, res) {
+  console.log(res);
+  if (res){
+    var form = document.querySelector('form[name="contact-form"]');
+    var btn = form.querySelector('button[type=submit]');
+    btn.innerHTML = 'Sending...';
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
+        console.log('hello');
+        var data = new FormData(form);
+        data.append('g-recaptcha-response', token);
+        console.log(token);
+        console.log(data.get('g-recaptcha-response'));
+        var request = new XMLHttpRequest();
+        request.onload = function() {
+          btn.innerHTML = 'SUBMIT';
+          var response = {};
+          try {
+            response = JSON.parse(this.responseText);
+          } catch(err) {}
+          if (this.status === 200 && response.success) {
+            form.reset();
+            if (response.message) {
+              alert(response.message);
+            }
+            return true;
+          }
+          if (response.message) {
+            alert(response.message);
+          } else {
+            alert('Something wrong. Please try again.');
+          }
+        }
+        request.onerror = function(err) {
+          btn.innerHTML = 'SUBMIT';
+        }
+        request.open(form.method, form.action);
+        request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+         var requestData = {};
+         data.forEach(function(value, key) {
+           requestData[key] = value;
+         });
+         request.send(JSON.stringify(requestData));
+    });
+  });
+  }
+  return false;
+}, options);
+
+VMasker(document.querySelector('[name="phone"]')).maskPattern("(999) 999-9999");
+VMasker(document.querySelector('[name="date"]')).maskPattern("99/99/9999");

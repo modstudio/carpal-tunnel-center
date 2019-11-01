@@ -128,6 +128,8 @@ return false;
        grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
          var data = new FormData(form);
          data.append('g-recaptcha-response', token);
+         console.log(token);
+         console.log(data.get('g-recaptcha-response'));
          var request = new XMLHttpRequest();
          request.onload = function() {
            btn.innerHTML = 'SUBMIT';

@@ -40,7 +40,8 @@
 
 
 <link rel="stylesheet" href="/assets/css/main.min.f2dcd2a7c07160f6f929c7716d040823e9da3af9ec604846e84b18bb07f428b0.css" integrity="sha256-8tzSp8BxYPb5KcdxbQQII&#43;naOvnsYEhG6EsYuwf0KLA=" crossorigin="anonymous" media="screen" />
-<script src="https://www.google.com/recaptcha/api.js?render=6LdeY8AUAAAAAIxQlgGzs1GGcNbNLdstm9k6Noxp" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA"></script>
+
 </head>
 <body><header class="site-header">
   <a class="site-header__logo" href="http://carpaltunnelcenter.com"><img src="/assets/images/logo.svg" alt="Carpal Tunnel Center"></a>
@@ -263,7 +264,6 @@
         <div class="form">
           <h2>Contact form</h2>
           <form name="contact-form" method="POST" action="https://us-central1-carpal-tunnel-center-form.cloudfunctions.net/form_sending">
-            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
             <div class="row gutter-20">
               <div class="col-12 col-md-6">
                 <div class="form-group">
@@ -332,48 +332,41 @@
     </div>
   </div>
 </section>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
+   document.querySelector('form[name="contact-form"').onsubmit = function(event) {
+     event.preventDefault();
+     var form = this;
+     var btn = form.querySelector('button[type=submit]');
+     btn.innerHTML = 'Sending...';
+     var data = new FormData(form);
+     var request = new XMLHttpRequest();
+     request.onload = function() {
+       btn.innerHTML = 'SUBMIT';
+       var response = {};
+       try {
+         response = JSON.parse(this.responseText);
+       } catch(err) {}
+       if (this.status === 200 && response.success) {
+         form.reset();
+         if (response.message) {
+           alert(response.message);
+         }
+         return true;
+       }
+       if (response.message) {
+         alert(response.message);
+       } else {
+         alert('Something wrong. Please try again.');
+       }
+     }
+     request.onerror = function(err) {
+       btn.innerHTML = 'SUBMIT';
+     }
+     request.open(this.method, this.action);
+     request.send(data);
 
-$('form[name=contact-form]').on('submit', function () {
-
-var _form = $(this);
-var data = _form.serialize();
-var btn = _form.find('button[type=submit]');
-btn.text('Sending...');
-$.ajax({
-url: _form.attr('action'),
-type: _form.attr('method'),
-dataType: 'json',
-data: data,
-success: function (response) {
-    btn.text('SUBMIT');
-    if (response.success) {
-
-        _form.trigger("reset");
-        alert(response.message);
-
-        return false;
-    } else {
-        if (response.message) {
-            alert(response.message);
-        } else {
-            alert('Something wrong. Please try again.');
-        }
-    }
-    return false;
-},
-error: function (err) {
-    btn.text('SUBMIT');
-    console.log(err);
-    return false;
-}
-});
-return false;
-});
-
-</script> 
-
+   }
+ </script>
 <footer class="site-footer">
   <div class="container container--sm">
     Copyright © 2019 Carpal Tunnel Clinic. All Rights reserved.

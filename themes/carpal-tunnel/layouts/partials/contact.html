@@ -5,7 +5,6 @@
         <div class="form">
           <h2>{{.Site.Data.contact.contact_heading}}</h2>
           <form name="contact-form" method="POST" action="https://us-central1-carpal-tunnel-center-form.cloudfunctions.net/form_sending">
-            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
             <div class="row gutter-20">
               <div class="col-12 col-md-6">
                 <div class="form-group">
@@ -78,45 +77,48 @@
 <script>
 
 $('form[name=contact-form]').on('submit', function () {
-
 var _form = $(this);
 var data = _form.serialize();
 var btn = _form.find('button[type=submit]');
 btn.text('Sending...');
-$.ajax({
-url: _form.attr('action'),
-type: _form.attr('method'),
-dataType: 'json',
-data: data,
-success: function (response) {
-    btn.text('SUBMIT');
-    if (response.success) {
+grecaptcha.ready(function() {
+  grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
+    console.log(token);
+    $.ajax({
+    url: _form.attr('action'),
+    type: _form.attr('method'),
+    dataType: 'json',
+    data: data,
+    success: function (response) {
+        btn.text('SUBMIT');
+        if (response.success) {
 
-        _form.trigger("reset");
-        alert(response.message);
-
-        return false;
-    } else {
-        if (response.message) {
+            _form.trigger("reset");
             alert(response.message);
+
+            return false;
         } else {
-            alert('Something wrong. Please try again.');
+            if (response.message) {
+                alert(response.message);
+            } else {
+                alert('Something wrong. Please try again.');
+            }
         }
+        return false;
+    },
+    error: function (err) {
+        btn.text('SUBMIT');
+        console.log(err);
+        return false;
     }
-    return false;
-},
-error: function (err) {
-    btn.text('SUBMIT');
-    console.log(err);
-    return false;
-}
+    });
+  });
 });
 return false;
 });
 
-</script> 
+</script>
 <!--<script>
-  console.log(document.querySelector('form[name="contact-form"'));
    document.querySelector('form[name="contact-form"').onsubmit = function(event) {
      event.preventDefault();
      var form = this;

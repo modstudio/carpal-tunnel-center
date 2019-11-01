@@ -1,5 +1,5 @@
 title: Carpal Tunnel Center
-baseURL: 'http://carpaltunnelcenter.com/'
+baseURL: 'http://carpaltunnelcenter.com'
 languageCode: en-us
 theme: carpal-tunnel
 disableKinds:

@@ -220,6 +220,10 @@ new Validator(formHandle, function (err, res) {
               successContainer.innerHTML = '<i class="icon icon-email"></i><span>' + response.message + '</span>';
             }
             return true;
+            setTimeout(function () {
+              successContainer.classList.remove('success');
+              successContainer.style.display = 'none';
+            }, 5000);
           }
           else if (this.status === 200 && response.success === false) {
             successContainer.style.display = 'block';

@@ -85,8 +85,11 @@
   border-radius: 10px 0 10px 0;
   margin-bottom: 28px;
   display: none;
-  span::first-letter{
-    text-transform: uppercase;
+  span{
+    display: block;
+    &::first-letter{
+      text-transform: uppercase;
+    }
   }
   i{
     left: 28px;

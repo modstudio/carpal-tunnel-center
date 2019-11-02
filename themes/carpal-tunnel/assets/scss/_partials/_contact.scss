@@ -78,3 +78,24 @@
     }
   }
 }
+
+.contact__result {
+  padding: 15px 15px 15px 54px;
+  position: relative;
+  border-radius: 10px 0 10px 0;
+  margin-bottom: 28px;
+  display: none;ß
+  i{
+    left: 28px;
+    @include fsz(17px);
+    position: absolute;
+  }
+  &.success {
+    background: rgba($very-light-blue, 0.25);
+    color: $blue;
+  }
+  &.error{
+    color: $red;
+    background: rgba($red, 0.05);
+  }
+}

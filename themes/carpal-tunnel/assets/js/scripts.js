@@ -199,6 +199,7 @@ new Validator(formHandle, function (err, res) {
   if (res){
     var form = document.querySelector('form[name="contact-form"]');
     var btn = form.querySelector('button[type=submit]');
+    var successContainer = document.querySelector('.contact__result');
     btn.innerHTML = 'Sending...';
     grecaptcha.ready(function() {
       grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
@@ -217,14 +218,20 @@ new Validator(formHandle, function (err, res) {
           if (this.status === 200 && response.success) {
             form.reset();
             if (response.message) {
-              alert(response.message);
+              successContainer.style.display = 'block';
+              successContainer.classList.add('success');
+              successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;
             }
             return true;
           }
           if (response.message) {
-            alert(response.message);
+            successContainer.style.display = 'block';
+            successContainer.classList.add('error');
+            successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;
           } else {
-            alert('Something wrong. Please try again.');
+            successContainer.style.display = 'block';
+            successContainer.classList.add('error');
+            successContainer.innerHTML = '<i class="icon icon-email"></i> Something went wrong. Please, try again later.';
           }
         }
         request.onerror = function(err) {

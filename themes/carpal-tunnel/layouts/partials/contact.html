@@ -5,6 +5,9 @@
         <div class="form">
           <h2>{{.Site.Data.contact.contact_heading}}</h2>
           <form name="contact-form" method="POST" action="https://us-central1-carpal-tunnel-center-form.cloudfunctions.net/form_sending">
+            <div class="contact__result error">
+              <i class="icon icon-email"></i>Your message was sent successfully! We will be in touch with you soon.
+            </div>
             <div class="row gutter-20">
               <div class="col-12 col-md-6">
                 <div class="form-group">
@@ -73,48 +76,3 @@
     </div>
   </div>
 </section>
-<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-
-$('form[name=contact-form]').on('submit', function () {
-var _form = $(this);
-var data = _form.serialize();
-var btn = _form.find('button[type=submit]');
-btn.text('Sending...');
-grecaptcha.ready(function() {
-  grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
-    console.log(token);
-    $.ajax({
-    url: _form.attr('action'),
-    type: _form.attr('method'),
-    dataType: 'json',
-    data: data,
-    success: function (response) {
-        btn.text('SUBMIT');
-        if (response.success) {
-
-            _form.trigger("reset");
-            alert(response.message);
-
-            return false;
-        } else {
-            if (response.message) {
-                alert(response.message);
-            } else {
-                alert('Something wrong. Please try again.');
-            }
-        }
-        return false;
-    },
-    error: function (err) {
-        btn.text('SUBMIT');
-        console.log(err);
-        return false;
-    }
-    });
-  });
-});
-return false;
-});
-
-</script>-->

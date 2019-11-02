@@ -195,7 +195,6 @@ let options = {
 
 // Got to validation
 new Validator(formHandle, function (err, res) {
-  console.log(res);
   if (res){
     var form = document.querySelector('form[name="contact-form"]');
     var btn = form.querySelector('button[type=submit]');
@@ -203,11 +202,8 @@ new Validator(formHandle, function (err, res) {
     btn.innerHTML = 'Sending...';
     grecaptcha.ready(function() {
       grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
-        console.log('hello');
         var data = new FormData(form);
         data.append('g-recaptcha-response', token);
-        console.log(token);
-        console.log(data.get('g-recaptcha-response'));
         var request = new XMLHttpRequest();
         request.onload = function() {
           btn.innerHTML = 'SUBMIT';
@@ -215,7 +211,7 @@ new Validator(formHandle, function (err, res) {
           try {
             response = JSON.parse(this.responseText);
           } catch(err) {}
-          if (response.message) {
+          if (response.success === false) {
             successContainer.style.display = 'block';
             successContainer.classList.add('error');
             successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;

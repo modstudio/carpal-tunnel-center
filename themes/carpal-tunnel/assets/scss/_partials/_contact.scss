@@ -85,6 +85,9 @@
   border-radius: 10px 0 10px 0;
   margin-bottom: 28px;
   display: none;
+  &:first-letter{
+    text-transform: uppercase;
+  }
   i{
     left: 28px;
     @include fsz(17px);

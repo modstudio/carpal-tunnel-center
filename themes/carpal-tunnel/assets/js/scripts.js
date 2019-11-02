@@ -211,11 +211,6 @@ new Validator(formHandle, function (err, res) {
           try {
             response = JSON.parse(this.responseText);
           } catch(err) {}
-          if (response.success === false) {
-            successContainer.style.display = 'block';
-            successContainer.classList.add('error');
-            successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;
-          }
           if (this.status === 200 && response.success) {
             form.reset();
             if (response.message) {
@@ -225,6 +220,11 @@ new Validator(formHandle, function (err, res) {
               successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;
             }
             return true;
+          }
+          else if (this.status === 200 && response.success === false) {
+            successContainer.style.display = 'block';
+            successContainer.classList.add('error');
+            successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;
           }
           else {
             successContainer.style.display = 'block';

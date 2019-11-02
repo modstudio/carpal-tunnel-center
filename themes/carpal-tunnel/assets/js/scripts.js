@@ -199,14 +199,15 @@ new Validator(formHandle, function (err, res) {
     var form = document.querySelector('form[name="contact-form"]');
     var btn = form.querySelector('button[type=submit]');
     var successContainer = document.querySelector('.contact__result');
-    btn.innerHTML = 'Sending...';
+    btn.innerHTML = 'Sending message...';
+    btn.disabled = true;
     grecaptcha.ready(function() {
       grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
         var data = new FormData(form);
         data.append('g-recaptcha-response', token);
         var request = new XMLHttpRequest();
         request.onload = function() {
-          btn.innerHTML = 'SUBMIT';
+          btn.innerHTML = 'Send Message';
           var response = {};
           try {
             response = JSON.parse(this.responseText);
@@ -218,12 +219,18 @@ new Validator(formHandle, function (err, res) {
               successContainer.classList.remove('error');
               successContainer.classList.add('success');
               successContainer.innerHTML = '<i class="icon icon-email"></i><span>' + response.message + '</span>';
+              btn.innerHTML = 'Thank you';
+              btn.classList.add('success');
+
+              setTimeout(function () {
+                successContainer.classList.remove('success');
+                successContainer.style.display = 'none';
+                btn.innerHTML = 'Send Message';
+                btn.classList.remove('success');
+                btn.disabled = false;
+              }, 5000);
             }
             return true;
-            setTimeout(function () {
-              successContainer.classList.remove('success');
-              successContainer.style.display = 'none';
-            }, 5000);
           }
           else if (this.status === 200 && response.success === false) {
             successContainer.style.display = 'block';
@@ -237,7 +244,8 @@ new Validator(formHandle, function (err, res) {
           }
         }
         request.onerror = function(err) {
-          btn.innerHTML = 'SUBMIT';
+          btn.innerHTML = 'Send Message';
+          btn.disabled = false;
         }
         request.open(form.method, form.action);
         request.setRequestHeader('Content-type', 'application/json; charset=utf-8');

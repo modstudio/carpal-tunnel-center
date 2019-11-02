@@ -35,6 +35,19 @@
     width: 200px;
     padding-left: 30px;
     overflow: hidden;
+    &:disabled{
+      pointer-events: none;
+      &:before{
+        content: "\ea0d";
+        @include fsz(15px);
+      }
+      &.success{
+        &:before{
+          content: "\ea0e";
+          @include fsz(15px);
+        }
+      }
+    }
     &:before{
       content: "\ea02";
       font-family: $font-icon;

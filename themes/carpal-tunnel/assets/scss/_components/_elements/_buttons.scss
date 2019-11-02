@@ -40,11 +40,13 @@
       &:before{
         content: "\ea0d";
         @include fsz(15px);
+        animation: icon-spin 2s infinite linear;
       }
       &.success{
         &:before{
           content: "\ea0e";
           @include fsz(15px);
+          animation: none;
         }
       }
     }
@@ -93,5 +95,14 @@
     background: $white;
     color: $blue;
     border: 2px solid $blue;
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

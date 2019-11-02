@@ -199,7 +199,7 @@ new Validator(formHandle, function (err, res) {
     var form = document.querySelector('form[name="contact-form"]');
     var btn = form.querySelector('button[type=submit]');
     var successContainer = document.querySelector('.contact__result');
-    btn.innerHTML = 'Sending message...';
+    btn.innerHTML = 'Sending...';
     btn.disabled = true;
     grecaptcha.ready(function() {
       grecaptcha.execute('6LdVncAUAAAAAPHpUu5pG4USDM31dffdj6c8oGUA', {action: 'homepage'}).then(function(token) {
@@ -236,6 +236,7 @@ new Validator(formHandle, function (err, res) {
             successContainer.style.display = 'block';
             successContainer.classList.add('error');
             successContainer.innerHTML = '<i class="icon icon-email"></i><span>' + response.message + '</span>';
+            btn.disabled = false;
           }
           else {
             successContainer.style.display = 'block';

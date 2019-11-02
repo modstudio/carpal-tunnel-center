@@ -39,8 +39,8 @@
       pointer-events: none;
       &:before{
         content: "\ea0d";
-        @include fsz(15px);
-        animation: icon-spin 2s infinite linear;
+        @include fsz(14px);
+        animation: icon-spin 1s infinite linear;
       }
       &.success{
         &:before{

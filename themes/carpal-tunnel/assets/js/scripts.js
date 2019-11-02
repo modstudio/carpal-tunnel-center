@@ -217,19 +217,19 @@ new Validator(formHandle, function (err, res) {
               successContainer.style.display = 'block';
               successContainer.classList.remove('error');
               successContainer.classList.add('success');
-              successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;
+              successContainer.innerHTML = '<i class="icon icon-email"></i><span>' + response.message + '</span>';
             }
             return true;
           }
           else if (this.status === 200 && response.success === false) {
             successContainer.style.display = 'block';
             successContainer.classList.add('error');
-            successContainer.innerHTML = '<i class="icon icon-email"></i> ' + response.message;
+            successContainer.innerHTML = '<i class="icon icon-email"></i><span>' + response.message + '</span>';
           }
           else {
             successContainer.style.display = 'block';
             successContainer.classList.add('error');
-            successContainer.innerHTML = '<i class="icon icon-email"></i> Something went wrong. Please, try again later.';
+            successContainer.innerHTML = '<i class="icon icon-email"></i><span>Something went wrong. Please, try again later.</span>';
           }
         }
         request.onerror = function(err) {

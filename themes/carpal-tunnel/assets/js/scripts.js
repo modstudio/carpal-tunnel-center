@@ -228,7 +228,7 @@ new Validator(formHandle, function (err, res) {
                 btn.innerHTML = 'Send Message';
                 btn.classList.remove('success');
                 btn.disabled = false;
-              }, 5000);
+              }, 10000);
             }
             return true;
           }

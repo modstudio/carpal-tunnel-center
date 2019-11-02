@@ -80,11 +80,15 @@
 }
 
 .contact__result {
-  padding: 15px 15px 15px 54px;
+  padding: 18px 15px 18px 54px;
   position: relative;
   border-radius: 10px 0 10px 0;
   margin-bottom: 28px;
   display: none;
+  line-height: 1.2;
+  @include respond-to(md){
+    padding: 18px 10px 18px 30px;
+  }
   span{
     display: block;
     &::first-letter{
@@ -94,7 +98,11 @@
   i{
     left: 28px;
     @include fsz(17px);
-    position: absolute;
+    @include center(vertical);
+    @include respond-to(md){
+      left: -10px;
+      @include fsz(20px);
+    }
   }
   &.success {
     background: rgba($very-light-blue, 0.25);

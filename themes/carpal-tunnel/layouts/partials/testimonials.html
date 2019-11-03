@@ -5,9 +5,12 @@
       {{ range .Site.Data.testimonials.review }}
       <div>
         <div class="testimonials-slider__item">
+          {{ $name := .name }}
+          {{ with .image }}
           <div class="testimonials-slider__item-img">
-            <img class="img-responsive" src="{{.image}}" alt="{{.name}}">
+              <img class="img-responsive" src="{{.}}" alt="{{ $name }}">
           </div>
+          {{ end }}
           <figure>
             <blockquote>
               {{ if in (string .text) "\n\n" }}

@@ -166,12 +166,10 @@ collections:
             - label: "Text"
               name: "text"
               widget: "markdown"
-            - label: "Button"
-              name: button
-              widget: boolean
             - label: "Button Link"
               name: button_link
               widget: string
+              required: false
               hint: Use relative link (if link address is "https://domain.com/about/" type "about". If button should go to some section type f.e. "about/#section-id" or "#section-id", if this section is on the same page with this button)
     - label: "Our process"
       name: "our_process"

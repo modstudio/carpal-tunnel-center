@@ -3,8 +3,7 @@ subheading: 'The efficient process that we offer includes:'
 speed: 7000
 id: slideshow
 item:
-  - button: true
-    button_link: about
+  - button_link: about
     heading: 'Better care, with reasonable pricing'
     image: assets/images/slideshow-1.jpg
     text: >-
@@ -12,8 +11,7 @@ item:
       carpal tunnel syndrome and this can be done efficiently in a private
       setting. We also accommodate patients with insurance and those that wish
       to pay out-of-pocket for the services, keeping the costs reasonable.
-  - button: true
-    button_link: 'faq/#question_2'
+  - button_link: 'faq/#question_2'
     heading: Endoscopic Carpal Tunnel Release
     image: assets/images/slideshow-2.jpg
     text: >-
@@ -23,8 +21,7 @@ item:
       the surgical site, where he cuts the ligament forming the roof the carpal
       tunnel and releases pressure on the median nerve. No splinting is
       required, just a bulky bandage.
-  - button: true
-    button_link: about
+  - button_link: about
     heading: Top Surgeon
     image: assets/images/slideshow-3.jpg
     text: >-

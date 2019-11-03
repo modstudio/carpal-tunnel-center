@@ -171,6 +171,7 @@ const scrollToElem = (startTime, currentTime, duration, scrollEndElemTop, startS
 
 let formHandle = document.querySelector('form[name="contact-form"]');
 let options = {
+    eventsList: ['change', 'blur'],
     rules: {
       phone_number: function (value, params) {
         return this.min(value.replace(/\s{2,}/g, ' ').length, params);

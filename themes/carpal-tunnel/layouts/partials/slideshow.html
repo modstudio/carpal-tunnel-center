@@ -20,9 +20,9 @@
                     <p>{{ .text | markdownify}}</p>
                   {{ end }}
                 </div>
-                {{ if .button }}
-                   <a class="btn btn--default" href="{{.button_link}}">Read more</a>
-                 {{ end }}
+                {{ with .button_link }}
+                  <a class="btn btn--default" href="{{.}}">Read more</a>
+                {{ end }}
               </div>
             </div>
           </div>

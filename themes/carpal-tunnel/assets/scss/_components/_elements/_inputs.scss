@@ -52,3 +52,7 @@
     border-bottom: 5px solid $red;
   }
 }
+.form-hint{
+  margin-top: -24px;
+  @include fsz(10px);
+}

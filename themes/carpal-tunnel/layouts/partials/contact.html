@@ -4,7 +4,7 @@
       <div class="col-12 col-sm-7 col-lg-8">
         <div class="form">
           <h2>{{.Site.Data.contact.contact_heading}}</h2>
-          <form name="contact-form" method="POST" action="https://us-central1-carpal-tunnel-center-form.cloudfunctions.net/form_sending">
+          <form name="contact-form" method="POST" action="https://us-central1-carpal-tunnel-center-form.cloudfunctions.net/form_sending" novalidate>
             <div class="contact__result"></div>
             <div class="row gutter-20">
               <div class="col-12 col-md-6">
@@ -31,6 +31,7 @@
             <div class="form-group">
               <textarea class="form-control" name="message" placeholder="Text message" data-rule="required"></textarea>
             </div>
+            <p class="form-hint">This site is protected by reCAPTCHA and the Google <a target="_blank" href="https://policies.google.com/privacy">Privacy Policy</a> and <a target="_blank" href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
             <button class="btn btn--default" type="submit">Send message</button>
           </form>
         </div>

@@ -29,14 +29,13 @@ if (slider) {
   function addAuto() {
     let biggestHeight = 0;
     setTimeout(function () {
-      let slides = document.querySelectorAll('.slideshow__wrap .tns-item');
+      let slides = document.querySelectorAll('.slideshow__wrap .row');
       slides.forEach(function(element, index){
         biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
       });
       slides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-      slider.refresh();
     }, 10);
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
@@ -84,14 +83,13 @@ if (testimonialSlider){
   function testimonialHeight() {
     let biggestHeight = 0;
     setTimeout(function () {
-      let tSlides = document.querySelectorAll('.testimonials-slider .tns-item');
+      let tSlides = document.querySelectorAll('.testimonials-slider .testimonials-slider__item');
       tSlides.forEach(function(element, index){
         biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
       });
       tSlides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-      testimonialSlider.refresh();
     }, 10);
   }
 }

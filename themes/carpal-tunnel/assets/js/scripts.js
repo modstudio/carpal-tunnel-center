@@ -12,7 +12,7 @@ toggleButton.addEventListener('click',function(e){
 let slider = document.querySelector('.slideshow__wrap');
 if (slider) {
   let sliderSpeed = document.querySelector('.slideshow__wrap').getAttribute('data-speed');
-  let slider = tns({
+  slider = tns({
     container: '.slideshow__wrap',
     mode: 'gallery',
     nav: false,
@@ -26,7 +26,6 @@ if (slider) {
   });
 
   slider.events.on('indexChanged', changeAuto);
-
   function addAuto() {
     let biggestHeight = 0;
     setTimeout(function () {
@@ -69,7 +68,7 @@ if (slider) {
 // Testimonials slider
 let testimonialSlider = document.querySelector('.testimonials-slider');
 if (testimonialSlider){
-  let testimonialSlider = tns({
+  testimonialSlider = tns({
     container: '.testimonials-slider',
     mode: 'gallery',
     nav: false,
@@ -85,14 +84,14 @@ if (testimonialSlider){
   function testimonialHeight() {
     let biggestHeight = 0;
     setTimeout(function () {
-      let slides = document.querySelectorAll('.testimonials-slider .tns-item');
-      slides.forEach(function(element, index){
+      let tSlides = document.querySelectorAll('.testimonials-slider .tns-item');
+      tSlides.forEach(function(element, index){
         biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
       });
-      slides.forEach(function(element, index){
+      tSlides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-      slider.updateSliderHeight();
+      testimonialSlider.updateSliderHeight();
     }, 10);
   }
 }

@@ -12,6 +12,9 @@
   @include fsz(16px);
   font-family: $font-regular;
   transition: 300ms;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   @at-root textarea#{&}{
     height: 110px;
     padding: 16px 30px;

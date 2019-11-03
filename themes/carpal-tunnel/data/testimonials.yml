@@ -1,20 +1,23 @@
 heading: What our patients say
 id: testimonials
 review:
-  - company: Widelab
-    image: ''
-    name: Rafał Olbromski
-    text: >-
-      Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
-      convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque
-      facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec
-      malesuada fames ac turpis velit.
   - company: ''
     image: ''
-    name: Landon Carter
+    name: Eloise Cannon
     text: >-
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam temporibus
-      totam, excepturi nesciunt earum ea ex voluptas porro vero nemo maxime
-      omnis officiis exercitationem unde illo adipisci itaque doloremque,
-      maiores, veniam voluptatum fugit nobis veritatis. Alias perspiciatis
-      cupiditate, hic voluptas?
+      ## Amazing doctor, wonderful human being.
+
+
+      Amazing doctor, wonderful human being. If there were more people like him
+      trustworthy,honest,sympathetic,empathetic.can't say enough! He literally
+      changed my life. Helped me in so many ways, thank you !
+  - company: ''
+    image: ''
+    name: Kate Washington
+    text: >-
+      I am extremely meticulous and it is rare for me to be satisfied with
+      service or results. Dr. Green is a very meticulous doctor and you can tell
+      he honestly cares about his patients' outcomes. He did an excellent job on
+      my carpal tunnel surgery and even talked me out of a different additional
+      expensive cosmetic procedure I wanted because he thought I would not be a
+      good candidate. Good results and good doctor.

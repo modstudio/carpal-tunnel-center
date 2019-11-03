@@ -209,7 +209,7 @@ collections:
           widget: "list"
           fields:
             - {label: "Name", name: "name", widget: "string"}
-            - {label: "Additional Info", name: "company", widget: "string"}
+            - {label: "Additional Info", name: "company", widget: "string", required: false}
             - {label: "Photo", name: "image", widget: "file"}
             - {label: "Text", name: "text", widget: "markdown"}
   - label: "Team"

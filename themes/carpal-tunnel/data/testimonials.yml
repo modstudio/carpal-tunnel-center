@@ -2,7 +2,7 @@ heading: What our patients say
 id: testimonials
 review:
   - company: Widelab
-    image: assets/images/user_1.jpg
+    image: ''
     name: Rafał Olbromski
     text: >-
       Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a,
@@ -10,7 +10,7 @@ review:
       facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec
       malesuada fames ac turpis velit.
   - company: ''
-    image: assets/images/user_1.jpg
+    image: ''
     name: Landon Carter
     text: >-
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam temporibus

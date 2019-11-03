@@ -1,8 +1,9 @@
 home_title: Our team
 home_id: team
 member:
-  - image: assets/images/dr_green.jpg
-    id: dr-green
+  - id: dr-green
+    image: assets/images/dr_green.jpg
+    linkedin_link: 'https://www.linkedin.com/in/rodney-green-41276423/'
     specialty: Hand surgeon
     text: >2-
        Dr. Rodney Green received his Medical Degree from the University of the Witwatersrand in Johannesburg, South Africa. He did his specialty training at the Cleveland Clinic; in General Surgery, Plastic Surgery and Hand Surgery. He is certified by the American Board of Plastic Surgery since 1989 and received a Certificate of Additional Qualification (CAQ) in Hand Surgery in 2004. He holds membership in The American Society of Plastic Surgeons and The American Society for Aesthetic Plastic Surgery and is a Fellow of The American College of Surgeons.
@@ -25,14 +26,14 @@ member:
       target='_blank' href='https://www.aaaasf.org'>AAAASF</a>, Medicare, and
       BWC.
     title: 'Dr. Rodney Green, M.D. FACS'
-  - image: assets/images/dr_bird.jpg
-    id: dr-bird
+  - id: dr-bird
+    image: assets/images/dr_bird.jpg
     specialty: Occupational Therapy Specialist
     text: ' Ms. Karen Bird is an Occupational Therapy Specialist who graduated with honors from Western Michigan University in 1979 and John Carroll University in 1989. She has been practicing occupational therapy for over 40 years in various positions, among them staff therapist at St. Vincent Charity Hospital and Health Center in Cleveland, OH. Ms. Bird works with Carpal Tunnel patients at the Carpal Tunnel Center’s Cleveland office to help our patients in their recovery after Surgery. She develops protocols to strengthen their hands and facilitate sensory recovery, using desensitizing techniques if needed. She also fashions thermoplastic splints when needed. She recommends equipment and orders it, for assisting in return to work if needed.'
     title: 'Ms. Karen N. Bird, MA OTRL'
-  - image: assets/images/dr_green.jpg
-    id: dr-dusenbury
-    linkedin_link: 'http://linkedin.com'
+  - id: dr-dusenbury
+    image: assets/images/dr_green.jpg
+    linkedin_link: ''
     specialty: Doctor of Physical Therapy
     text: >2-
        Certified in Clinical Electro-diagnostics (EMG/NCS)  \
@@ -48,9 +49,9 @@ member:
       through the American Academy of Clinical Electrodiagnosis through which he
       was certified in electroneuromyography (EMG/NCS) testing.
     title: 'Dr. Kevin Dusenbury, DPT'
-  - image: assets/images/mrs_akerman.jpg
-    id: mrs-akerman
-    linkedin_link: 'http://linkedin.com'
+  - id: mrs-akerman
+    image: assets/images/mrs_akerman.jpg
+    linkedin_link: ''
     specialty: PA
     text: >2-
        Ester Raizy Akerman, PA-C, is a Physician Assistant with over a decade of medical experience. Her extensive plastic surgery training makes her the preferred provider for laceration repair in the New Jersey area. She currently runs a busy plastic surgery practice under the supervision of Dr. Rodney Green, M.D., FACS. PA Akerman is renowned for her exceptional individualized care and reassuring bedside manner.
@@ -66,6 +67,6 @@ staff:
     specialty: Office Manager
     title: Kimberley Lucas
   - image: assets/images/roxanne_bennicci.jpg
-    linkedin_link: '#'
+    linkedin_link: ''
     specialty: Patient Coordinator
     title: Roxanne Bennicci

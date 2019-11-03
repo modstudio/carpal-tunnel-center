@@ -92,7 +92,8 @@ if (testimonialSlider){
       slides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 5);
+      slider.updateSliderHeight();
+    }, 10);
   }
 }
 

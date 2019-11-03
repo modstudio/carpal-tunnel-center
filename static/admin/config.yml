@@ -267,7 +267,7 @@ collections:
             - {label: "Name", name: "title", widget: "string"}
             - {label: "Specialty", name: "specialty", widget: "string"}
             - {label: "Link to Linkedin", name: "linkedin_link", widget: "string", required: false}
-            - {label: "Photo", name: "image", widget: "file"}
+            - {label: "Photo", name: "image", widget: "file", required: false}
   - label: "FAQ"
     name: "faq"
     files:

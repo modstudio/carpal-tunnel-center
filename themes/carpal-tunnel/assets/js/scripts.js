@@ -37,7 +37,7 @@ if (slider) {
         element.style.height = biggestHeight +'px';
       });
       slider.updateSliderHeight();
-    }, 10);
+    }, 100);
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
     sliderBtn.classList.add('auto');
@@ -92,7 +92,7 @@ if (testimonialSlider){
         element.style.height = biggestHeight +'px';
       });
       testimonialSlider.updateSliderHeight();
-    }, 10);
+    }, 100);
   }
 }
 

@@ -11,7 +11,7 @@
 
 {{ $js := slice $tinyslider $validation $mask_input | resources.Concat "assets/js/bundle.js" | minify }}
 <script src="{{$js.RelPermalink}}"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.js" integrity="sha256-yE0r0xKguW5+Mx31/ApDi0I3aYuUMfSwUD5208Ajz9k=" crossorigin="anonymous"></script>
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/scripts.js"}}
 {{ $script_dest := slice $script | resources.Concat "assets/js/scripts.js"}}

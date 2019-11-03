@@ -7,7 +7,18 @@
 .team-item {
   padding: 50px 0;
   &__img {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
     img{
+      transition: 700ms;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      font-family: 'object-fit: cover; object-position: center;';
       border-radius: 0 60px 0 60px;
       @include respond-to(sm){
         border-radius: 0 30px 0 30px;
@@ -71,19 +82,31 @@
     margin-bottom: 40px;
   }
   &__img{
-    border-radius: 60px 0 0 0;
-    &.odd{
-      border-radius: 0 0 60px 0;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    img{
+      border-radius: 60px 0 0 0;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      font-family: 'object-fit: cover; object-position: center;';
+      &.odd{
+        border-radius: 0 0 60px 0;
+        @include respond-to(sm){
+          border-radius: 0 30px 0 30px;
+        }
+      }
       @include respond-to(sm){
         border-radius: 0 30px 0 30px;
       }
     }
-    @include respond-to(sm){
-      border-radius: 0 30px 0 30px;
-    }
   }
   &__body {
-    padding: 44px 50px 44px 115px;
+    padding: 44px 50px;
     display: flex;
     position: relative;
     @include respond-to(lg){
@@ -99,12 +122,11 @@
     }
   }
   .icon-rounded{
-    flex-shrink: 0;
     position: absolute;
+    top: 0;
+    transform: translateY(-50%);
     left: 50px;
     @include respond-to(lg){
-      top: 0;
-      transform: translateY(-50%);
       left: 30px;
     }
   }

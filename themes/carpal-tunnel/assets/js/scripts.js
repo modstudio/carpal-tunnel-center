@@ -1,3 +1,4 @@
+objectFitImages();
 // Menu Toggle
 let toggleButton = document.querySelector('.toggle-menu');
 let menu = document.querySelector('.site-nav');

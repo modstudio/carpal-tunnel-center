@@ -29,13 +29,13 @@
     </div>
   </section>
   <section class="staff" id="{{.Site.Data.team.staff_id}}">
-    <div class="container">
+    <div class="container container--sm">
       <h2 class="text-center">{{.Site.Data.team.staff_title}}</h2>
       <div class="row gutter-20">
         {{ range $i,$p := .Site.Data.team.staff}}
         <div class="col-12 col-sm-6">
           <div class="staff-block">
-            <img class="staff-block__img img-responsive {{if not (modBool $i 2)}} odd{{end}}" src="{{.image | relURL}}" alt="">
+            <div class="staff-block__img "><img class="img-responsive {{if not (modBool $i 2)}} odd{{end}}" src="{{.image | relURL}}" alt=""></div>
             <div class="staff-block__body">
               {{ with .linkedin_link }}
               <a class="icon-rounded" href="{{.}}" target="_blank"><i class="icon icon-linkedin"></i></a>

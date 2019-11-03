@@ -22,21 +22,22 @@ if (slider) {
     speed: 800,
     autoplayButtonOutput: false,
     touch: false,
-    onInit: addAuto(),
   });
+
+  document.addEventListener('DOMContentLoaded', function(){
+    addAuto();
+  }, false);
 
   slider.events.on('indexChanged', changeAuto);
   function addAuto() {
     let biggestHeight = 0;
-    window.onload = function(){
-      let slides = document.querySelectorAll('.slideshow__wrap .tns-item');
-      slides.forEach(function(element, index){
-        biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
-      });
-      slides.forEach(function(element, index){
-        element.style.height = biggestHeight +'px';
-      });
-    };
+    let slides = document.querySelectorAll('.slideshow__wrap .slideshow__item');
+    slides.forEach(function(element, index){
+      biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
+    });
+    slides.forEach(function(element, index){
+      element.style.height = biggestHeight +'px';
+    });
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
     sliderBtn.classList.add('auto');
@@ -77,22 +78,23 @@ if (testimonialSlider){
     speed: 800,
     autoplayButtonOutput: false,
     controlsText: ['<i class="icon icon-arrow icon-flip-y"></i>', '<i class="icon icon-arrow"></i>'],
-    onInit: testimonialHeight(),
   });
 
   function testimonialHeight() {
-    let biggestHeight = 0;
-    window.onload = function(){
-      let tSlides = document.querySelectorAll('.testimonials-slider .testimonials-slider__item');
-      tSlides.forEach(function(element, index){
-        biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
-      });
-      tSlides.forEach(function(element, index){
-        element.style.height = biggestHeight +'px';
-      });
-    };
+    let tBiggestHeight = 0;
+    let tSlides = document.querySelectorAll('.testimonials-slider .testimonials-slider__item');
+    tSlides.forEach(function(element, index){
+      tBiggestHeight = element.offsetHeight > tBiggestHeight ? element.offsetHeight : tBiggestHeight;
+    });
+    tSlides.forEach(function(element, index){
+      element.style.height = tBiggestHeight +'px';
+    });
   }
+  document.addEventListener('DOMContentLoaded', function(){
+    testimonialHeight();
+  }, false);
 }
+
 
 // FAQ
 let faqItem = document.querySelectorAll(".faq-item");

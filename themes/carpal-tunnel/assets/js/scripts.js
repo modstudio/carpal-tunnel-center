@@ -21,6 +21,7 @@ if (slider) {
     autoplayTimeout: sliderSpeed,
     speed: 800,
     autoplayButtonOutput: false,
+    touch: false,
     onInit: addAuto(),
   });
 
@@ -36,7 +37,7 @@ if (slider) {
       slides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 5);
+    }, 10);
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
     sliderBtn.classList.add('auto');

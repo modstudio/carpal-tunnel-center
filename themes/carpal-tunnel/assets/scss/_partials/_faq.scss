@@ -42,7 +42,7 @@
     &:after{
       content: '\ea09';
       font-family: $font-icon;
-      position: absolute;
+      @include center(vertical);
       width: 36px;
       height: 36px;
       background: $blue;

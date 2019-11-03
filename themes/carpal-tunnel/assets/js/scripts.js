@@ -37,7 +37,7 @@ if (slider) {
       slides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 10);
+    }, 50);
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
     sliderBtn.classList.add('auto');

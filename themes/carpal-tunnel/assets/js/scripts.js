@@ -24,10 +24,6 @@ if (slider) {
     touch: false,
   });
 
-  document.addEventListener('DOMContentLoaded', function(){
-    addAuto();
-  }, false);
-
   slider.events.on('indexChanged', changeAuto);
   function addAuto() {
     let biggestHeight = 0;
@@ -90,9 +86,13 @@ if (testimonialSlider){
       element.style.height = tBiggestHeight +'px';
     });
   }
-  document.addEventListener('DOMContentLoaded', function(){
+}
+
+if (slider || testimonialSlider){
+  window.onload = function(){
+    addAuto();
     testimonialHeight();
-  }, false);
+  };
 }
 
 

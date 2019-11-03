@@ -37,7 +37,8 @@ if (slider) {
       slides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 50);
+      slider.updateSliderHeight();
+    }, 10);
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
     sliderBtn.classList.add('auto');

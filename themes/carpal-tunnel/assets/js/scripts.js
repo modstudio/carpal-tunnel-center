@@ -36,7 +36,7 @@ if (slider) {
       slides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 30);
+    }, 120);
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
     sliderBtn.classList.add('auto');
@@ -90,7 +90,7 @@ if (testimonialSlider){
       tSlides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 30);
+    }, 120);
   }
 }
 

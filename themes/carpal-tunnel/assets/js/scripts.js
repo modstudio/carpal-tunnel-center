@@ -28,15 +28,15 @@ if (slider) {
   slider.events.on('indexChanged', changeAuto);
   function addAuto() {
     let biggestHeight = 0;
-    setTimeout(function () {
-      let slides = document.querySelectorAll('.slideshow__wrap .row');
+    window.onload = function(){
+      let slides = document.querySelectorAll('.slideshow__wrap .tns-item');
       slides.forEach(function(element, index){
         biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
       });
       slides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 10);
+    };
 
     let sliderBtn = document.querySelector('.slideshow-nav__item');
     sliderBtn.classList.add('auto');
@@ -82,7 +82,7 @@ if (testimonialSlider){
 
   function testimonialHeight() {
     let biggestHeight = 0;
-    setTimeout(function () {
+    window.onload = function(){
       let tSlides = document.querySelectorAll('.testimonials-slider .testimonials-slider__item');
       tSlides.forEach(function(element, index){
         biggestHeight = element.offsetHeight > biggestHeight ? element.offsetHeight : biggestHeight;
@@ -90,7 +90,7 @@ if (testimonialSlider){
       tSlides.forEach(function(element, index){
         element.style.height = biggestHeight +'px';
       });
-    }, 10);
+    };
   }
 }
 

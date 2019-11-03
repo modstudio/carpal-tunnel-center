@@ -27,9 +27,6 @@
           padding-right: ($grid-gutter-width / 6) + px;
         }
       }
-      @include respond-to(sm){
-        display: block;
-      }
     }
   }
   &__image {

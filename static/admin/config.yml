@@ -210,7 +210,7 @@ collections:
           fields:
             - {label: "Name", name: "name", widget: "string"}
             - {label: "Additional Info", name: "company", widget: "string", required: false}
-            - {label: "Photo", name: "image", widget: "file"}
+            - {label: "Photo", name: "image", widget: "file", required: false}
             - {label: "Text", name: "text", widget: "markdown"}
   - label: "Team"
     name: "team"
@@ -267,7 +267,7 @@ collections:
             - {label: "Name", name: "title", widget: "string"}
             - {label: "Specialty", name: "specialty", widget: "string"}
             - {label: "Link to Linkedin", name: "linkedin_link", widget: "string", required: false}
-            - {label: "Photo", name: "image", widget: "file", required: false}
+            - {label: "Photo", name: "image", widget: "file"}
   - label: "FAQ"
     name: "faq"
     files:

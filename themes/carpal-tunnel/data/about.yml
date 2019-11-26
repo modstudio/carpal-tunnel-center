@@ -18,7 +18,7 @@ about_text:
     Founder and director  \
     Dr. Rodney Green, M.D. FACS
 clinic:
-  clinic_image: assets/images/clinic-image.jpg
+  clinic_image: /assets/images/logo.svg
   clinic_title: Our Clinic
   id: clinic
 process:

@@ -1,5 +1,5 @@
 # Redirect domain aliases to primary domain
-https://ohiocarpaltunnelcenter.com/* https://carpaltunnelcenter.com/:splat 301!
+https://carpaltunnelcenter.com/* https://ohiocarpaltunnelcenter.com/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
-https://carpaltunnelcenter.netlify.com/* https://carpaltunnelcenter.com/:splat 301!
+https://carpaltunnelcenter.netlify.com/* https://ohiocarpaltunnelcenter.com/:splat 301!

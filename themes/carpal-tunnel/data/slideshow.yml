@@ -1,21 +1,20 @@
-heading: Carpal Tunnel Center
-subheading: 'The efficient process that we offer includes:'
+heading: Ohio Carpal Tunnel Center
+subheading: "The efficient process that we offer includes:"
 speed: 7000
 id: slideshow
 item:
   - button_link: about
-    heading: 'Better care, with reasonable pricing'
+    heading: Better care, with reasonable pricing
     image: assets/images/slideshow-1.jpg
-    text: >-
-      The Carpal Tunnel Center team has many years of experience with treating
-      carpal tunnel syndrome and this can be done efficiently in a private
-      setting. We also accommodate patients with insurance and those that wish
-      to pay out-of-pocket for the services, keeping the costs reasonable.
-  - button_link: 'faq/#question_2'
+    text: The Ohio Carpal Tunnel Center team has many years of experience with
+      treating carpal tunnel syndrome and this can be done efficiently in a
+      private setting. We also accommodate patients with insurance and those
+      that wish to pay out-of-pocket for the services, keeping the costs
+      reasonable.
+  - button_link: faq/#question_2
     heading: Endoscopic Carpal Tunnel Release
     image: assets/images/slideshow-2.jpg
-    text: >-
-      This is a minimal invasive procedure. In the endoscopic carpal tunnel
+    text: This is a minimal invasive procedure. In the endoscopic carpal tunnel
       release, the surgeon makes a small incision in the folds of the wrist and
       guides a thin tube containing a telescope attached to a camera directly to
       the surgical site, where he cuts the ligament forming the roof the carpal
@@ -24,8 +23,7 @@ item:
   - button_link: about
     heading: Top Surgeon
     image: assets/images/slideshow-3.jpg
-    text: >-
-      Entrust the future of your hands with a surgeon who values their
+    text: Entrust the future of your hands with a surgeon who values their
       intricacy. Dr. Rodney Green is a recognized expert in Hand Surgery. His
       precision as a plastic surgeon ensures that the tissues are handled
       carefully, and suturing is done expertly to avoid scarring. Dr. Green has

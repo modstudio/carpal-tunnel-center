@@ -1,5 +1,5 @@
 ---
-title: Get relief from your carpal tunnel syndrome today
+title: Get relief from your carpal tunnel syndrome today - Ohio Carpal Tunnel Center
 subheading: "The Ohio Carpal Tunnel Center specializes in single-port endoscopic
   carpal tunnel release, offering prompt release of pressure on the Median
   nerve, relief of pain and inflammation with rapid recovery and resumption of

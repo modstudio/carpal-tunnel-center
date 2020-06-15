@@ -1,40 +1,31 @@
 about_text:
   id: about
   photo: /assets/images/dsc_4430cropped1000px.jpg
-  text: >2-
+  text: >-2
      Over the past thirty years, Dr. Green has practiced in the greater Cleveland area, after specialty training at the Cleveland Clinic Foundation. He is a Board-Certified Plastic Surgeon with additional Certification in Hand Surgery, through the American Board of Plastic Surgery.
 
-    In 1993, Dr. Green trained with Dr. John Agee, inventor of the Agee
-    endoscopic carpal tunnel procedure and instrument. Doctor green adopted this
-    technique for carpal tunnel release after that and has been using this
-    technique ever since. Thousands of patients have had relief from their
-    symptoms of carpal tunnel syndrome using this technique.
+    In 1993, Dr. Green trained with Dr. John Agee, inventor of the Agee endoscopic carpal tunnel procedure and instrument. Doctor green adopted this technique for carpal tunnel release after that and has been using this technique ever since. Thousands of patients have had relief from their symptoms of carpal tunnel syndrome using this technique.
 
 
-    The Carpal Tunnel Center has been recently established in Dr. Green’s
-    Plastic Surgery offices to make the process of treating patients with Carpal
-    Tunnel Syndrome more efficient and more available to those that need it.
+    The Carpal Tunnel Center has been recently established in Dr. Green’s Plastic Surgery offices to make the process of treating patients with Carpal Tunnel Syndrome more efficient and more available to those that need it.
   title: |-
     Founder and director  \
     Dr. Rodney Green, M.D. FACS
 clinic:
-  clinic_image: /assets/images/logo.svg
-  clinic_title: Our Clinic
-  id: clinic
+  clinic_image: /assets/images/ohio-carpal-tunnel-center.png
+  clinic_title: Ohio Carpal Tunnel Center
+  id: center
 process:
   - icon: /assets/images/consult.svg
     text: |-
       Consultation with Dr. Green at his office or by videoconference.  \
       (We also offer initial screening at our satellite office in Lakewood NJ.)
   - icon: /assets/images/arrangement.svg
-    text: >-
-      Arrangement at the same location, for electrical testing to confirm the
+    text: Arrangement at the same location, for electrical testing to confirm the
       diagnosis and establish objective baseline.
   - icon: assets/images/treatment.svg
-    text: >-
-      Surgical treatment with the single port endoscopic technique at our Ohio
+    text: Surgical treatment with the single port endoscopic technique at our Ohio
       State licensed Surgery Center also located at the same location.
   - icon: assets/images/follow-up_2.svg
-    text: >-
-      Postop follow-up at the same location with hand therapy provided by our
+    text: Postop follow-up at the same location with hand therapy provided by our
       licensed Occupational Therapist, also at the same location.

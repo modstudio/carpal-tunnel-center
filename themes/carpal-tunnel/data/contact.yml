@@ -1,5 +1,5 @@
-contact_heading: "Contact form"
-locations_heading: "Locations"
+contact_heading: Contact Ohio Carpal Tunnel Center
+locations_heading: Locations
 cleveland:
   cleveland_address_1: 5035 Mayfield Road, Suite 10
   cleveland_address_2: Lyndhurst, OH 44124
@@ -7,7 +7,6 @@ cleveland:
   cleveland_phone: 440-449-8880
   cleveland_hours_1: M-Th 9:30am-5:00pm
   cleveland_hours_2: Fri 9:30am-2:00pm
-
 lakewood:
   lakewood_address_1: ERA - Mrs Ester Raizy Akerman
   lakewood_address_2: 539 Marc Drive

@@ -1,5 +1,5 @@
-title: Carpal Tunnel Center
-baseURL: 'https://carpaltunnelcenter.com'
+title: Ohio Carpal Tunnel Center
+baseURL: https://carpaltunnelcenter.com
 languageCode: en-us
 theme: carpal-tunnel
 disableKinds:
@@ -22,10 +22,9 @@ menu:
 params:
   appointment_text: Make an appointment today
   author: modstud.io
-  description: >-
-    The Carpal Tunnel Center specializes in single-port endoscopic carpal tunnel
-    release. Personalized care by our team of experts ensures that you are in
-    good hands.
+  description: The Ohio Carpal Tunnel Center specializes in single-port endoscopic
+    carpal tunnel release. Personalized care by our team of experts ensures that
+    you are in good hands.
   googleAnalitycsID: UA-426069-3
   images: /assets/images/carpal-tunnel-center.jpg
   logo: assets/images/logo.svg

@@ -267,3 +267,6 @@ new Validator(formHandle, function (err, res) {
 
 VMasker(document.querySelector('[name="phone"]')).maskPattern("(999) 999-9999");
 VMasker(document.querySelector('[name="date"]')).maskPattern("99/99/9999");
+
+// Current Year
+document.getElementById("year").innerHTML = new Date().getFullYear();

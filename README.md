@@ -47,6 +47,7 @@ Notes:
   - CMS and Identity widget are already included.
   - Typical Netlify build command: `hugo`
   - Publish directory: `public`
+  - Netlify is configured via `netlify.toml` to install Hugo automatically (HUGO_VERSION pinned). No additional setup in the UI is required.
 - If using Netlify CMS with Git Gateway, ensure Netlify Identity is enabled and users are invited from your Netlify dashboard.
 
 ## Editing Content in the CMS

@@ -1,2 +1,9 @@
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+
+# Crawl-delay for aggressive bots (ignored by Google/Bing but respected by some)
+# Crawl-delay: 10
+
+Sitemap: https://www.carpaltunnelcenter.com/sitemap.xml

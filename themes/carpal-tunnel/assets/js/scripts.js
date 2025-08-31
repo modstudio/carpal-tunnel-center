@@ -203,6 +203,19 @@ new Validator(formHandle, function (err, res) {
     var form = document.querySelector('form[name="contact-form"]');
     var btn = form.querySelector('button[type=submit]');
     var successContainer = document.querySelector('.contact__result');
+
+    // Simple anti-spam checks: honeypot and minimum time on page
+    var hp = form.querySelector('input[name="company"]');
+    var tsInput = form.querySelector('input[name="form_loaded_at"]');
+    var loadedAt = tsInput && parseInt(tsInput.value || '0', 10);
+    var now = Date.now();
+    if ((hp && hp.value && hp.value.trim() !== '') || (loadedAt && (now - loadedAt) < 3000)) {
+      successContainer.style.display = 'block';
+      successContainer.classList.add('error');
+      successContainer.innerHTML = '<i class="icon icon-email"></i><span>Please try again. Your submission was flagged as automated.</span>';
+      return false;
+    }
+
     btn.innerHTML = 'Sending...';
     btn.disabled = true;
     grecaptcha.ready(function() {

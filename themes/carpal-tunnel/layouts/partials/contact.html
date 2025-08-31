@@ -4,7 +4,10 @@
       <div class="col-12 col-sm-7 col-lg-8">
         <div class="form">
           <h2>{{.Site.Data.contact.contact_heading}}</h2>
-          <form name="contact-form" method="POST" action="https://us-central1-carpal-tunnel-center-form.cloudfunctions.net/form_sending" novalidate>
+          <form name="contact-form" method="POST" action="https://us-central1-carpal-tunnel-center-form.cloudfunctions.net/form_sending" novalidate autocomplete="off">
+                      <input type="text" name="company" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;left:-5000px;top:auto;width:1px;height:1px;overflow:hidden;" placeholder="Your company (leave blank)">
+                      <input type="hidden" name="form_loaded_at" value="">
+                      <script>(function(){try{var f=document.currentScript&&document.currentScript.previousElementSibling;var form=document.currentScript.parentNode;var ts=form.querySelector('input[name="form_loaded_at"]');ts.value=Date.now();}catch(e){}})();</script>
             <div class="contact__result"></div>
             <div class="row gutter-20">
               <div class="col-12 col-md-6">
